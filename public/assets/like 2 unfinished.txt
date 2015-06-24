@@ -1,0 +1,12 @@
+@foreach ($story->likes as $like)
+
+	@if(!DB::table('likes')->where('user_id', 1)) && (!DB::table('likes')->where('likeable_id', $story->id))
+	
+hi
+@else
+nada
+
+@endif
+
+
+@endforeach

@@ -1,0 +1,5 @@
+@if(DB::table('likes')->whereLikeable_idAndUser_id($story->id, Auth::user()->id)->get())
+           it is an id 13 like
+           @else
+           it isn't
+           @endif
