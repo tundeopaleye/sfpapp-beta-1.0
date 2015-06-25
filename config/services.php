@@ -38,19 +38,19 @@ return [
 	'twitter' => [
 	'client_id' => env('TWITTER_CLIENT_ID'),
 	'client_secret' => env('TWITTER_CLIENT_SECRET'),
-	'redirect' => 'http://localhost:8000/stories', //revert to sfpapp.com?
+	'redirect' => 'http://46.101.17.71/social/login', //revert to sfpapp.com?
 	],
 	
 	'facebook' => [
 	'client_id' => env('FACEBOOK_CLIENT_ID'),
 	'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-	'redirect' => 'http://sfpapp.com',
+	'redirect' => 'http://46.101.17.71/social/login',
 	],
 	
 	'github' => [
 	'client_id' => env('GITHUB_CLIENT_ID'),
 	'client_secret' => env('GITHUB_CLIENT_SECRET'),
-	'redirect' => 'http://localhost:8000/social/login', //revert to sfpapp.com?GITHUB_CLIENT_SECRET
+	'redirect' => 'http://46.101.17.71/social/login', //revert to sfpapp.com?GITHUB_CLIENT_SECRET
 	],
 	
 
