@@ -52,7 +52,7 @@ use App\User;
 
 			//$user = $this->socialite->driver('github')->user(); //addition - extract to it's function
 			
-			$user = $this->users->findByUsernameOrCreate($this->getTwitterUser()); // addition 
+			$user = $this->users->findByUsernameOrCreate($this->getGitHubUser()); // addition 
 			
 		//	$this->auth->login($user, true);
 			
