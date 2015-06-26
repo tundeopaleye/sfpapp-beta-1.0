@@ -11,7 +11,7 @@ class UserRepository {
    public function findByUsernameOrCreate($userData){
 		
 		return User::firstOrCreate([
-		'name' => $userData->name,
+		'name' => $userData->email,
 		'email' => $userData->email,
 		'username' => $userData->nickname,
 		'avatar' => $userData->avatar,
