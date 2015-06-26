@@ -12,7 +12,6 @@ class UserRepository {
 		
 		return User::firstOrCreate([
 		'name' => $userData->nickname,
-		'name' => $userData->username,
 		'email' => $userData->email,
 		'username' => $userData->nickname,
 		'avatar' => $userData->avatar,
