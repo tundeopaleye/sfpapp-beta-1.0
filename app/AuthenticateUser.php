@@ -48,7 +48,7 @@ use App\User;
     	
 		public function execute($hasCode, AuthenticateUserListener $listener){
 			
-			if ( ! $hasCode) return $this->getAuthorizationFirstTwitter();
+			if ( ! $hasCode) return $this->getAuthorizationFirst();
 
 			//$user = $this->socialite->driver('github')->user(); //addition - extract to it's function
 			
@@ -63,12 +63,12 @@ use App\User;
 		private function getAuthorizationFirst()
 		{
 		
-		return $this->socialite->driver('github')->redirect();
+		return $this->socialite->driver('twitter')->redirect();
 		
 		}
 		
 		private function getGitHubUser(){
-			return $this->socialite->driver('github')->user();
+			return $this->socialite->driver('twitter')->user();
 		}
 		
 		private function getAuthorizationFirstTwitter()
