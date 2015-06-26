@@ -38,7 +38,7 @@ return [
 	'twitter' => [
 	'client_id' => env('TWITTER_CLIENT_ID'),
 	'client_secret' => env('TWITTER_CLIENT_SECRET'),
-	'redirect' => 'http://46.101.17.71/social/login', //revert to sfpapp.com?
+	'redirect' => 'http://46.101.17.71/social/login/', //revert to sfpapp.com?
 	],
 	
 	'facebook' => [
