@@ -54,10 +54,10 @@ use App\User;
 			
 			$user = $this->users->findByUsernameOrCreate($this->getTwitterUser()); // addition 
 			
-			$this->auth->login($user, true);
+		//	$this->auth->login($user, true);
 			
-			return $listener->userHasLoggedIn($user);
-			//dd($user);
+		//	return $listener->userHasLoggedIn($user);
+			dd($user);
 		}
 		
 		private function getAuthorizationFirst()
