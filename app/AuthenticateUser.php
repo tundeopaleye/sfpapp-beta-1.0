@@ -63,12 +63,12 @@ use App\User;
 		private function getAuthorizationFirst()
 		{
 		
-		return $this->socialite->driver('facebook')->redirect();
+		return $this->socialite->driver('github')->redirect();
 		
 		}
 		
 		private function getGitHubUser(){
-			return $this->socialite->driver('facebook')->user();
+			return $this->socialite->driver('github')->user();
 		}
 		
 		private function getAuthorizationFirstTwitter()
