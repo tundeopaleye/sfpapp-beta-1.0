@@ -16,16 +16,17 @@ class CreateUsersTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
+			$table->string('uname');
 			$table->string('email')->unique();
 			$table->string('password', 60);
 			$table->rememberToken();
 			$table->timestamps();
-			$table->username();
-			$table->provider();
-			$table->provider_id();
-			$table->activation_code();
-			$table->active();
-			$table->is_admin();
+			$table->string('username');
+			$table->string('provider');
+			$table->string('provider_id');
+			$table->string('activation_code');
+			$table->boolean('active');
+			$table->boolean('is_admin');
 			
 		});
 	}
