@@ -54,9 +54,9 @@ use App\User;
 			
 			$user = $this->users->findByUsernameOrCreate($this->getGitHubUser()); // addition 
 			
-		//	$this->auth->login($user, true);
+		$this->auth->login($user, true);
 			
-		//	return $listener->userHasLoggedIn($user);
+		return $listener->userHasLoggedIn($user);
 			dd($user);
 		}
 		
