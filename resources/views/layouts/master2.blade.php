@@ -42,6 +42,9 @@
   
   <link rel="stylesheet" href="dist/ladda.min.css">
   
+  <link rel="stylesheet" href="../css/nivo-slider.css" type="text/css" />
+<script src="../js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+  
 </head>
 
 <div style="background:#f57f20; padding:1em; margin-bottom: 1.5em;">
