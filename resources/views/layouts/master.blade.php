@@ -47,7 +47,7 @@
 <div style="background:#f57f20; padding:1em; margin-bottom: 1.5em;">
 	<div align="right">
 		@if (Auth::check())
-			Welcome, <b>{{ Auth::user()->name }} ( {{ Auth::user()->username }} ) ( {{ Auth::user()->email }} ) ( {{ Auth::user()->uname }} )!</b>
+			Welcome, <b>{{ Auth::user()->name }} ( {{ Auth::user()->username }} )!</b>
 			@else
 			Hello, stranger! <a href="/auth/login">Login</a> or <a href="/auth/register">
 				Register</a> | <a href="/login/twitter">Login in with Twitter</a> <a href="/login/facebook">Login in with Facebook</a>
