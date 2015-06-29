@@ -87,9 +87,7 @@ class StoriesController extends Controller {
 	{
 		//
 		if (Input::hasFile('thumbnail'))
-			{
-				
-				
+			{				
 				$image = Image::make(Input::file('thumbnail')->getRealPath());	
 				//$ext = pathinfo(Input::file('thumbnail'), PATHINFO_EXTENSION);
 	    	//	$extension = $image->getExtension();
@@ -134,15 +132,10 @@ class StoriesController extends Controller {
 	
 			if (count($request->get('categories')) > 0) {
 			$story->categories()->sync($request->get('categories'));
-			}
-	
-	\Session::flash('flash_message', 'Your Story has been created!');
-
-	//return \Redirect::route('stories.create')->with('message', 'Your story has been created!');
-	
-	//return redirect('stories');
+			}	
+	\Session::flash('flash_message', 'Your Story has been created!');	
 	return redirect('stories/'.$story->id.'/edit');
-	//return view('stories/'.$story->id.'/edit')->with('categories', $categories);
+	
 	}
 
 
@@ -166,9 +159,6 @@ class StoriesController extends Controller {
 		return view('stories.show')->with('story', $story)->with('user', $user);
 		
 		
-		
-		
-	
 	}
 
 	/**
@@ -231,15 +221,6 @@ class StoriesController extends Controller {
 	}
 	
 	
-	public function imagetest()
-	{
-		//
-		$image = Image::make(file_get_contents('http://localhost:8000/images/1427902331-sfp'));
-
-		return Response::make($image, 200, ['Content-Type' => 'image/jpg']);
 		
-	}
-	
-	
 	
 }

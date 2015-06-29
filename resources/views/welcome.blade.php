@@ -13,9 +13,9 @@
                 <img src="images/sfpbanner2.jpg" data-thumb="images/sfpbanner2.jpg" alt="" data-transition="slideInLeft" />
                 <img src="images/sfpbanner1.jpg" data-thumb="images/sfpbanner1.jpg" alt="" title="#htmlcaption" />
             </div>
-            <div id="htmlcaption" class="nivo-html-caption">
+           <!-- <div id="htmlcaption" class="nivo-html-caption">
                 <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
-            </div>
+           </div>-->
         </div>
 
     </div>
