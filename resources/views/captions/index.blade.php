@@ -20,7 +20,7 @@
 				<div id="grid" class="col-md-3 col-sm-6"padding-bottom: 3em;"> 
   				<br><br>
 	            <p class="orange"><h3>{{ $caption->title }}</h3></p>
-	           <h5 style="color: #f57f20;">Written by: {{ $caption->user->name }}<b></b></h5>
+	           <h5 style="color: #f57f20;">Written by: {{ $caption->user->name }} ({{ $caption->user->username }})</h5>
 	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/captions/{{$caption->id}}">{!!HTML::image("thumbnails/$caption->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em;">{{ str_limit($caption->caption, $limit = 250, $end = '...') }}</p>
 	
