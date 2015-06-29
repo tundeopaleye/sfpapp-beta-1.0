@@ -39,6 +39,8 @@ get('dashboard', ['middleware' => 'auth', function() {
 
 
 get('social/login', 'Auth\AuthController@login');
+
+get('social/login/twitter', 'Auth\AuthController@login');
 //get('logout', 'Auth\AuthController@logout');
 
 

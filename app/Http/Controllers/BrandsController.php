@@ -33,6 +33,13 @@ use Image;
 
 
 class BrandsController extends Controller {
+	
+	
+	public function __construct(){
+		
+		$this->middleware('auth', ['only' => 'create', 'edit', 'update', 'delete', 'store']);
+		
+	}
 
 	/**
 	 * Display a listing of the resource.

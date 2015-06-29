@@ -71,6 +71,15 @@ use App\User;
 			return $this->socialite->driver('github')->user();
 		}
 		
+		private function getTwitterUser(){
+			return $this->socialite->driver('twitter')->user();
+		}
+		
+		private function getFacebookUser(){
+			return $this->socialite->driver('facebook')->user();
+		}
+		
+		
 		private function getAuthorizationFirstTwitter()
 		{
 		
