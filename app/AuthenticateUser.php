@@ -87,9 +87,7 @@ use App\User;
 		
 		}
 		
-		private function getTwitterUser(){
-			return $this->socialite->driver('twitter')->user();
-		}
+		
 		
 		
     }
