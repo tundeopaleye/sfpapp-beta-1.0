@@ -114,12 +114,7 @@ use App\User;
 		}
 		
 		
-		private function getAuthorizationFirstTwitter()
-		{
 		
-		return $this->socialite->driver('twitter')->redirect();
-		
-		}
 		
 		
 		
