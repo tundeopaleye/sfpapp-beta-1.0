@@ -73,7 +73,7 @@ class AuthController extends Controller implements AuthenticateUserListener{
 public function logintwitter(AuthenticateUser $authenticateUser, Request $request){
 			
 			
-    	 $hasCode = $request->has('code');
+    	 $hasCode = $request->has('oauth_token');
 
         return $authenticateUser->executetwitter($hasCode, $this);
 	 
