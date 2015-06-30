@@ -15,8 +15,8 @@ return [
 	|
 	*/
 
-	'driver' => "smtp",
-	//'driver' => env('MAIL_DRIVER', 'smtp'),
+	//'driver' => "smtp",
+	'driver' => env('MAIL_DRIVER', 'smtp'),
 	//'driver' => "log",
 
 	/*
@@ -30,7 +30,8 @@ return [
 	|
 	*/
 
-	'host' => "smtp.googlemail.com",
+	//'host' => "smtp.googlemail.com",
+	'host' => env('MAIL_HOST'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -56,7 +57,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'olatundeopaleye@gmail.com', 'name' => 'SFP'],
+	'from' => ['address' => env('MAIL_USERNAME'), 'name' => 'SFP'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -82,8 +83,8 @@ return [
 	|
 	*/
 
-	'username' => "olatundeopaleye@gmail.com",
-	//'username' => env('MAIL_USERNAME'),
+	//'username' => "olatundeopaleye@gmail.com",
+	'username' => env('MAIL_USERNAME'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -96,8 +97,8 @@ return [
 	|
 	*/
 
-	'password' => "ednuttee",
-	//'password' => env('MAIL_PASSWORD'),
+	//'password' => "ednuttee",
+	'password' => env('MAIL_PASSWORD'),
 
 	/*
 	|--------------------------------------------------------------------------
