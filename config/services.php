@@ -19,8 +19,12 @@ return [
 		'secret' => '',
 	],
 
-	'mandrill' => [
+	/*'mandrill' => [
 		'secret' => env('MAIL_PASSWORD'),
+	],*/
+	
+	'mandrill' => [
+		'secret' => 'GSo_8zWh9CFZXzdGL33ZKA',
 	],
 
 	'ses' => [
