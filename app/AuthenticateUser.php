@@ -90,7 +90,7 @@ use App\User;
 		private function getAuthorizationFirstTwitter()
 		{
 		
-		return $this->socialite->driver('twitter')->redirect();
+		return $this->socialite->driver('twitter')->redirect('stories');
 		
 		}
 		
