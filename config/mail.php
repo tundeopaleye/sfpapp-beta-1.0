@@ -15,8 +15,8 @@ return [
 	|
 	*/
 
-	//'driver' => "smtp",
-	'driver' => env('MAIL_DRIVER', 'smtp'),
+	'driver' => "smtp",
+	//'driver' => env('MAIL_DRIVER', 'smtp'),
 	//'driver' => "log",
 
 	/*
