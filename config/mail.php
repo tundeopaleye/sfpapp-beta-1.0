@@ -31,8 +31,8 @@ return [
 	*/
 
 	//'host' => "smtp.googlemail.com",
-	'host' => env('MAIL_HOST'),
-
+	//'host' => env('MAIL_HOST'),
+	'host' => "smtp.mandrillapp.com",
 	/*
 	|--------------------------------------------------------------------------
 	| SMTP Host Port
@@ -57,7 +57,8 @@ return [
 	|
 	*/
 
-	'from' => ['address' => env('MAIL_USERNAME'), 'name' => 'SFP'],
+	//'from' => ['address' => env('MAIL_USERNAME'), 'name' => 'SFP'],
+	'from' => ['address' => 'mails@sfpapp.com', 'name' => 'SFP'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -84,7 +85,8 @@ return [
 	*/
 
 	//'username' => "olatundeopaleye@gmail.com",
-	'username' => env('MAIL_USERNAME'),
+	//'username' => env('MAIL_USERNAME'),
+	'username' => "mails@sfpapp.com",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -98,7 +100,8 @@ return [
 	*/
 
 	//'password' => "ednuttee",
-	'password' => env('MAIL_PASSWORD'),
+	//'password' => env('MAIL_PASSWORD'),
+	'password' => "GSo_8zWh9CFZXzdGL33ZKA",
 
 	/*
 	|--------------------------------------------------------------------------
