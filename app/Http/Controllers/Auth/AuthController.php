@@ -69,6 +69,26 @@ class AuthController extends Controller implements AuthenticateUserListener{
 	 
 	 
     }
+
+public function logintwitter(AuthenticateUser $authenticateUser, Request $request){
+			
+			
+    	 $hasCode = $request->has('code');
+
+        return $authenticateUser->executetwitter($hasCode, $this);
+	 
+	 
+    }
+
+public function loginfacebook(AuthenticateUser $authenticateUser, Request $request){
+			
+			
+    	 $hasCode = $request->has('code');
+
+        return $authenticateUser->executefacebook($hasCode, $this);
+	 
+	 
+    }
 	
 	
 	

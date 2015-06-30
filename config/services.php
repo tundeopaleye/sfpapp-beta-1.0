@@ -42,13 +42,13 @@ return [
 	'twitter' => [
 	'client_id' => env('TWITTER_CLIENT_ID'),
 	'client_secret' => env('TWITTER_CLIENT_SECRET'),
-	'redirect' => 'http://sfpapp.com/social/login/', //revert to sfpapp.com?
+	'redirect' => 'http://sfpapp.com/social/login/twitter', //revert to sfpapp.com?
 	],
 	
 	'facebook' => [
 	'client_id' => env('FACEBOOK_CLIENT_ID'),
 	'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-	'redirect' => 'http://sfpapp.com/social/login',
+	'redirect' => 'http://sfpapp.com/social/login/facebook',
 	],
 	
 	'github' => [
