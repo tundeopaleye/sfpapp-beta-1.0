@@ -34,7 +34,7 @@ get('login', 'SessionsController@login');
 post('login', 'SessionsController@postLogin');
 get('logout', 'SessionsController@logout');
 get('dashboard', ['middleware' => 'auth', function() {
-	return 'You are in!';
+	return 'You are in! <a href="See stories">';
 } ]);
 
 
