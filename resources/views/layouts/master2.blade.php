@@ -87,6 +87,11 @@
 @yield('content')
 </div>
 
+<div class="col-md-12" style="background-color: #000; color: #fff; padding:1em; font-size: 10px;" align="center">
+	&copy; 2015 Stories From Pictures - All Rights Reserved 
+
+</div>
+
 <!--<div class="col-md-3">
 @section('advertisement')
 <p>
