@@ -59,9 +59,12 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		//return view('welcome');
+		
 		$categories = Category::lists('name','id'); 
-		return view('welcome')->with('story', $story)->with('user', $user);
+		//$story = Story::lists('title','id');
+		//$user = User::find($story->user_id);
+		//return view('welcome')->with('story', $story)->with('user', $user);
+		return view('welcome');
 	}
 	
 	
