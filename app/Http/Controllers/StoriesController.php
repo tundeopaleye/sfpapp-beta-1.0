@@ -57,6 +57,21 @@ class StoriesController extends Controller {
 			
 		   
 	}
+	
+	
+	public function welcomeindex()
+	{
+		
+          $categories = Category::lists('name','id');   
+		  
+		 // $list = Todolist::orderBy(DB::raw('RAND()'))->first(); 
+		 // return view('welcome')->with('stories', Story::orderBy('id','DESC')); //
+           
+		return view('welcome')->with('stories', Story::DB::raw('RAND()'))->first(); //
+			
+		   
+	}
+	
 
 	/**
 	 * Show the form for creating a new resource.

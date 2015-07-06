@@ -91,7 +91,19 @@
         		</div>
         		</div>
         	
-        	<div class="col-md-4 col-sm-12"><div align="center"><h3>Featured Story and Caption</h3></div></div>
+        	<div class="col-md-4 col-sm-12">
+        		<div align="center"><h3>Featured Story and Caption</h3></div>
+        		<div>
+        			@if ($row->stories->count() > 0)
+					<ul>
+					@foreach ($row->stories as $story)
+					
+					<li>{{ $story->title }}</li>
+					
+					@endforeach
+</ul>
+        		</div>
+        	</div>
         	
         	<div class="col-md-4 col-sm-12"><div align="center"><h3>Featured Brand Story</h3></div></div>
         	
