@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 use App\Story;
 
+use App\Caption;
+
+use App\Brand;
+
 use App\Category;
 
 use App\User;
@@ -61,10 +65,12 @@ class WelcomeController extends Controller {
 	{
 		
 		$categories = Category::lists('name','id'); 
-		//$story = Story::lists('title','id');
-		//$user = User::find($story->user_id);
-		//return view('welcome')->with('story', $story)->with('user', $user);
-		return view('welcome');
+		$story = Story::lists('title','id');
+		$brand = Brand::all()->random(1);  
+		$caption = Caption::all()->random(1); 
+		$story = Story::all()->random(1); 
+		return view('welcome')->with('caption', $caption)->with('story', $story)->with('brand', $brand);	
+			
 	}
 	
 	
