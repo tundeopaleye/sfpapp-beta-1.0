@@ -61,7 +61,22 @@ class WelcomeController extends Controller {
 	{
 		//return view('welcome');
 		$categories = Category::lists('name','id'); 
-		return view('welcome')->with('stories', Story::orderBy('id','DESC')->paginate(12));
+		return view('welcome')->with('story', $story)->with('user', $user);
+	}
+	
+	
+	
+	public function show($id)
+	{
+		//
+		$story = Story::find($id);
+		$user = User::find($story->user_id);
+		$story->story = nl2br($story->story);
+		
+		
+		return view('stories.show')->with('story', $story)->with('user', $user);
+		
+		
 	}
 
 }
