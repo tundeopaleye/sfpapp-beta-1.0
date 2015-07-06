@@ -20,16 +20,18 @@
         
         <div>
         	<div class="col-md-4 col-sm-12">
-        		<div align="center"><h3>Register/Login</h3></div>
+        		
+        		<div class="col-md-12">
+				<h2><span style="color:#f57f20;">It's Fiction on Fleek!</span></h2>
+				<h4><span style=" line-height:1.5em; font-weight:bold;">Just Upload a Picture, Add a Title and tell your Story or Caption it! Brands too can let their Customers tell their story.</span></h4>
+			</div>
+        	<!--	<div align="center"><h3>Register/Login</h3></div> -->
         		<div>
         			<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
 			
-			<div class="col-md-12">
-				<h2>It's Fiction on Fleek!</h2>
-				<h4>Just Upload a Picture, Add a Title and tell your Story or Caption it! Brands too can let their Customers tell their story.</h4>
-			</div>
+			
 			
 			<div align="center"><a href="../register">Register as a new user</a></div>
 			<div class="panel panel-default">
