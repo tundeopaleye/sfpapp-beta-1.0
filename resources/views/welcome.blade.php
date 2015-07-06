@@ -25,6 +25,12 @@
         			<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
+			
+			<div class="col-md-12">
+				<h2>It's Fiction on Fleek!</h2>
+				<h4>It's Fiction on Fleek!</h4>
+			</div>
+			
 			<div align="center"><a href="../register">Register as a new user</a></div>
 			<div class="panel panel-default">
 				
