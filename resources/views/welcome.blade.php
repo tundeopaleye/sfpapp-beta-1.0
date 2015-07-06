@@ -98,7 +98,7 @@
   			
 	           <h4 style="color: #f57f20;">{{$story->title}}</h4>
 	           <h5 style="color: #000;">Told by: {{ $story->user->name }}</h5>
-	            <p><div style="height:6em; overflow: hidden; border:3px solid #f57f20; "><a href="/stories/{{$story->id}}">{!!HTML::image("thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
+	            <p><div style="height:6em; overflow: hidden; border:3px solid #eee; "><a href="/stories/{{$story->id}}">{!!HTML::image("thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p style="background-color:#eee; color:#000; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($story->story, $limit = 50, $end = '...') }}</p>
 				<a href="/captions/{{$caption->id}}">See Full Story</a>
 				</div>
@@ -106,7 +106,7 @@
 				<div id="grid" class="col-md-12 col-sm-12"> 				
 				<h4 style="color: #f57f20;">{{$caption->title}}</h4>
 				<h5 style="color: #000;">Captioned by: {{ $caption->user->name }}</h5>
-				<p><div style="height:6em; overflow: hidden; border:3px solid #f57f20; "><a href="/captions/{{$caption->id}}">{!!HTML::image("thumbnails/$caption->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
+				<p><div style="height:6em; overflow: hidden; border:3px solid #000; "><a href="/captions/{{$caption->id}}">{!!HTML::image("thumbnails/$caption->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 				<p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($caption->caption, $limit = 50, $end = '...') }}</p>
 				<a href="/captions/{{$caption->id}}">See Full Caption</a>
 				</div>	       
