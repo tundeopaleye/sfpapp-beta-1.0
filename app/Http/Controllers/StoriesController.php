@@ -53,27 +53,15 @@ class StoriesController extends Controller {
 		
           $categories = Category::lists('name','id');    
            
-		return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
+		return view(['stories.index', 'welcome'])->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
+		
+		//return view('welcome')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
 			
 		   
 	}
 	
 	
-	public function welcomeindex()
-	{
-		
-          $categories = Category::lists('name','id');   
-		  
-		 // $list = Todolist::orderBy(DB::raw('RAND()'))->first(); 
-		 // return view('welcome')->with('stories', Story::orderBy('id','DESC')); //
-           
-		//return view('welcome')->with('stories', Story::DB::raw('RAND()'))->first(); //
-			
-		   $categories = Category::lists('name','id');    
-           
-		return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(1)); //Temporary paginate 4
-		  
-	}
+	
 	
 
 	/**

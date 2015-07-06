@@ -93,8 +93,9 @@
         	
         	<div class="col-md-4 col-sm-12">
         		<div align="center"><h3>Featured Story and Caption</h3></div>
-        		<div>
-        			@foreach(array_chunk($stories->all(), 1) as $row)
+        		<div class="row clearfix">
+
+				@foreach(array_chunk($stories->all(), 1) as $row)
 
 				<div class="row">
 
@@ -102,18 +103,21 @@
 				
 				<div id="grid" class="col-md-3 col-sm-6"padding-bottom: 3em;"> 
   				<br><br>
-	            <p class="orange"><h3>{{ $story->title }}</h3></p>
-	            <h5 style="color: #f57f20;">Written by: {{ $story->user->name }}<b></b></h5>
+	            
+	           <h5 style="color: #f57f20;">Captioned by: {{ $story->user->name }}</h5>
 	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/stories/{{$story->id}}">{!!HTML::image("thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
-	            <p>{{ str_limit($story->story, $limit = 50, $end = '...') }}</p>
+	            <p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 2em;">{{ str_limit($story->story, $limit = 50, $end = '...') }}</p>
 	
 	            <span style="color:#f57f20;"> {{ $story->reposts->count() }} Retells</span> | <span style="color:#f57f20;">{{ $story->comments->count() }} Comment(s)</span> | {{ $story->likes->count() }} likes<br>
-	            <a href="/stories/{{$story->id}}">Read Full Story</a> 
+	            <a href="/stories/{{$story->id}}">See Individual Story</a> 
 	            </div>
 	        	
 	        @endforeach
-	       </div>
-	       @endforeach
+
+	</div>
+
+@endforeach
+	        
 	        {!! $stories->render() !!}
         		</div>
         	</div>
