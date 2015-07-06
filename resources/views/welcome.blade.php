@@ -133,7 +133,7 @@
 				<h3 style="color: #f57f20;">{{$brand->title}}</h3>
 				<h5 style="color: #000;">Told by: {{ $brand->user->name }}</h5>
 				<p><div style="height:12em; overflow: hidden; border:3px solid #f57f20; "><a href="/brands/{{$brand->id}}">{!!HTML::image("thumbnails/$brand->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
-				<p style="background-color:#f57f20; color:#fff; font-weight:bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($brand->brand, $limit = 250, $end = '...') }}</p>
+				<p style="background-color:#f57f20; color:#fff; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($brand->brand, $limit = 250, $end = '...') }}</p>
 				<a href="/brands/{{$brand->id}}">See Full Brand Story</a> 
 				</div>	
         		
