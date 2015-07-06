@@ -28,7 +28,7 @@
 			
 			<div class="col-md-12">
 				<h2>It's Fiction on Fleek!</h2>
-				<h4>It's Fiction on Fleek!</h4>
+				<h4>Just Upload a Picture, Add a Title and tell your Story or Caption it! Brands too can let their Customers tell their story.</h4>
 			</div>
 			
 			<div align="center"><a href="../register">Register as a new user</a></div>
