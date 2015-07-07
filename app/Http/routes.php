@@ -33,9 +33,10 @@ Route::controllers([
 get('login', 'SessionsController@login');
 post('login', 'SessionsController@postLogin');
 get('logout', 'SessionsController@logout');
-get('dashboard', ['middleware' => 'auth', function() {
+/*get('dashboard', ['middleware' => 'auth', function() {
 	return view('dashboard.index');
-} ]);
+} ]);*/
+get('dashboard', 'DashboardController@index');
 
 
 get('social/login', 'Auth\AuthController@login');
