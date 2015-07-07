@@ -8,7 +8,7 @@
 <br>
 	Stories Told: {{ $story->where('user_id', Auth::user()->id)->count() }}
 	<br><br>
-	Number of Retold Stories: {{ $repost->where('user_id', Auth::user()->id)->where('repostable_type', 'App\Story')->count() }}
+	Number of Retold Stories: {{ $repost->where('user_id', Auth::user()->id)->where('repostable_type', App\Story)->count() }}
 	<br><br>
 	Pictures Captioned: {{ $caption->where('user_id', Auth::user()->id)->count() }}
 	<br><br>
