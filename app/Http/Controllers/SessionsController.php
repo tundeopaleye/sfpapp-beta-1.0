@@ -25,7 +25,7 @@ class SessionsController extends Controller {
 		if (Auth::attempt($this->getCredentials($request))){
 		\Session::flash('flash_message', 'Your are now logged in!');
 			
-			return redirect()->intended('/stories');	
+			return redirect()->intended('/dashboard');	
 		}
 		
 		\Session::flash('flash_message', 'Could not sign you in');

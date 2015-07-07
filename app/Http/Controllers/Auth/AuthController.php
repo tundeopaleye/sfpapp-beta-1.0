@@ -132,7 +132,7 @@ public function loginfacebook(AuthenticateUser $authenticateUser, Request $reque
        if ($this->signIn($request)) {
             flash('Welcome back!');
 
-            return redirect()->intended('/captions');
+            return redirect()->intended('/dashboard');
         }
 
         flash('Could not sign you in.');
