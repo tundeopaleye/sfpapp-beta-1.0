@@ -20,7 +20,31 @@
 	<br><br><br>
 	Recent Stories Told	
 	<br><br>
-	Recent Captions Told
+	
+
+			@if ($liststories->count() > 0)
+			<ul>
+			@foreach($liststories as $story)
+			<li>{{ $story->title }}</li>
+			@endforeach
+			</ul>
+			@endif
+	       
+	        
+	Recent Captions Told<br>
+	@if ($listcaptions->count() > 0)
+			<ul>
+			@foreach($listcaptions as $caption)
+			<li>{{ $caption->title }}</li>
+			@endforeach
+			</ul>
+			@endif
 	<br><br>
+	Number of Retold Brand Stories: {{App\Repost::where('repostable_type', 'App\Brand')->where('user_id', Auth::user()->id)->count()}} 
+	
+	<br><br>
+	
+
+			
 	Recent Brand Stories Told	
  @stop
