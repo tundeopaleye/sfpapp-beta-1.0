@@ -97,7 +97,7 @@ class CaptionsController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
-			$filet = time() . '-sfp'.$ext;
+			$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext;
 			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
