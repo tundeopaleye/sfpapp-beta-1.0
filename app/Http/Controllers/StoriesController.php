@@ -51,13 +51,11 @@ class StoriesController extends Controller {
 	public function index()
 	{
 		
-          $categories = Category::lists('name','id');    
+        $categories = Category::lists('name','id');    
            
-		return view(['stories.index'])->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
-		
-		//return view('welcome')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
+		return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
 			
-		   
+		 
 	}
 	
 	
@@ -69,7 +67,8 @@ class StoriesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+
+	public function create()	
 	{
 		//
 		
@@ -106,7 +105,7 @@ class StoriesController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
-			$filet = time() . '-sfp'.$ext;
+			$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext; //$filet = time() . '-sfp'.$ext;
 			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
