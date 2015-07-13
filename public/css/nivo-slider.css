@@ -104,6 +104,7 @@
 .nivo-controlNav {
 	text-align:center;
 	padding: 15px 0;
+	display:none; /* modified to not show 123 */
 }
 .nivo-controlNav a {
 	cursor:pointer;
