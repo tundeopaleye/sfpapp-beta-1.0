@@ -4,28 +4,14 @@
 
 <!--<h1>Latest Stories</h1>-->
 
-<h1>Dashboard</h1>
-<br>
-	Stories Told: {{ $story->where('user_id', Auth::user()->id)->count() }}
-	<br><br>
-	Number of Story Retells: 
- {{App\Repost::where('repostable_type', 'App\Story')->where('user_id', Auth::user()->id)->count()}} 
- <br><br>
-	Pictures Captioned: {{ $caption->where('user_id', Auth::user()->id)->count() }}
-	<br><br>
-	
-	Number of ReCaptions: {{App\Repost::where('repostable_type', 'App\Caption')->where('user_id', Auth::user()->id)->count()}} 
-	<br><br>
-	Brand Stories Told: {{ $brand->where('user_id', Auth::user()->id)->count() }}	
-	<br><br><br>
-	Recent Stories Told	
-	<br><br>
+
 	
 
 			@if ($liststories->count() > 0)
+			supposed to work since it reads liststories->count
 			<ul>
 			@foreach($liststories as $story)
-			<li>{{ $story->title }}</li>
+			<li>{{ $story->title }} xx</li>
 			@endforeach
 			</ul>
 			@endif
@@ -40,8 +26,7 @@
 			</ul>
 			@endif
 	<br><br>
-	Number of Retold Brand Stories: {{App\Repost::where('repostable_type', 'App\Brand')->where('user_id', Auth::user()->id)->count()}} 
-	
+	Number of Retold Brand Stories: 
 	<br><br>
 	
 
