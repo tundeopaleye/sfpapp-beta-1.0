@@ -16,7 +16,7 @@
 {!! Form::label('Title') !!}
 {!! Form::text('title', null,
 array('required', 'class'=>'form-control',
-'placeholder'=>'San Juan Vacation')) !!}
+'placeholder'=>'Story Story')) !!}
 </div>
 
 
@@ -31,7 +31,7 @@ array('required', 'class'=>'form-control',
 {!! Form::label('Story') !!}
 {!! Form::textarea('story', null,
 array('required', 'class'=>'form-control',
-'placeholder'=>'Things to do before leaving for vacation')) !!}
+'placeholder'=>'Once Upon a Time')) !!}
 </div>
 
 <div class="form-group">
