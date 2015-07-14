@@ -47,19 +47,14 @@ class DashboardController extends Controller {
 	public function index()
 	{
 		//
-		$liststories = Story::orderBy('id','DESC');
-		$listcaptions = Caption::orderBy('id','DESC');
-		$listbrands = Brand::orderBy('id','DESC');
-		
 		$categories = Category::lists('name','id'); 
-		$user = User::all(); 
-		$story = Story::lists('title','id');
-		$brand = Brand::all();  
-		$caption = Caption::all(); 
-		$story = Story::all(); 
-		$repost = Repost::all(); 
-		return view('dashboard.index')->with('caption', $caption)->with('story', $story)->with('brand', $brand)->with('user',$user)->with('repost', $repost)->with('listcaptions', $listcaptions)->with('liststories', $liststories);	
-			
+		//$story = Story::lists('title','id');
+		//$brands = Brand::lists('title','id');  
+		$brands = Brand::all()->where('user_id', Auth::user()->id);  
+		$captions = Caption::all()->where('user_id', Auth::user()->id); 
+		$stories = Story::all()->where('user_id', Auth::user()->id); 
+		return view('dashboard.index')->with('captions', $captions)->with('stories', $stories)->with('brands', $brands);	
+		
 	}
 
 	/**
@@ -88,9 +83,12 @@ class DashboardController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show()
 	{
 		//
+		$user = User::all();
+		$stories = Story::all();
+		return view('dashboard.index')->with('user', $user)->with('storie', $stories);
 	}
 
 	/**

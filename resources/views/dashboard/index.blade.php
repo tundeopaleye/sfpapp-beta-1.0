@@ -4,32 +4,56 @@
 
 <!--<h1>Latest Stories</h1>-->
 
+<h1>Dashboard</h1>
+<br>
 
-	
+<div class="col-md-4 col-sm-12">
+	@if ($stories->count() > 0)
+	Number of Brand Stories: {{$stories->count()}}
+	@foreach ($stories as $story)
+	<ul>
+	<li><b>{{ $story->title }}</b> [edit | view | delete]</li>
+ </ul>
+ @endforeach
+ @else
+ <p>
+ You haven't created any brand stories.
+ 
+ </p>
+ @endif
+</div>	
 
-			@if ($liststories->count() > 0)
-			supposed to work since it reads liststories->count
-			<ul>
-			@foreach($liststories as $story)
-			<li>{{ $story->title }} xx</li>
-			@endforeach
-			</ul>
-			@endif
-	       
-	        
-	Recent Captions Told<br>
-	@if ($listcaptions->count() > 0)
-			<ul>
-			@foreach($listcaptions as $caption)
-			<li>{{ $caption->title }}</li>
-			@endforeach
-			</ul>
-			@endif
-	<br><br>
-	Number of Retold Brand Stories: 
-	<br><br>
-	
+<div class="col-md-4 col-sm-12">
+	@if ($captions->count() > 0)
+	Number of Brand Stories: {{$captions->count()}}
+	@foreach ($captions as $caption)
+	<ul>
+	<li><b>{{ $caption->title }}</b> [edit | view | delete]</li>
+ </ul>
+ @endforeach
+ @else
+ <p>
+ You haven't created any brand stories.
+ 
+ </p>
+ @endif
+</div>	
+
+<div class="col-md-4 col-sm-12">
+	@if ($brands->count() > 0)
+	Number of Brand Stories: {{$brands->count()}}
+	@foreach ($brands as $brand)
+	<ul>
+	<li><b>{{ $brand->title }}</b> [edit | view | delete]</li>
+ </ul>
+ @endforeach
+ @else
+ <p>
+ You haven't created any brand stories.
+ 
+ </p>
+ @endif
+</div>		
 
 			
-	Recent Brand Stories Told	
  @stop
