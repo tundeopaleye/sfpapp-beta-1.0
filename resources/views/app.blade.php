@@ -19,7 +19,7 @@
 	<![endif]-->
 	<style>
 	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-  background-color: #f57f20;}
+  }
   </style>
 
 </head>
@@ -36,9 +36,9 @@
 				
 			</div>
 			
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #f57f20;>
 				<ul class="nav navbar-nav">
-					<li><a href="{{ url('/') }}">Home</a></li>
+					
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -47,7 +47,7 @@
 						<li><a href="{{ url('/register') }}">Register</a></li>
 					@else
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} ({{ Auth::user()->username }})<span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="background-color: #f57f20;">{{ Auth::user()->name }}<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="{{ url('/logout') }}">Logout</a></li>
 							</ul>
