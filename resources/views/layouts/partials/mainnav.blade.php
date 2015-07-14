@@ -15,13 +15,13 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
             	
-              <li><a href="/">Home</a></li>
-              <li><a href="/stories">Stories</a></li>
-              <li><a href="/stories/create">Create Story</a></li>
-               <li><a href="/captions">Captions</a></li>
-              <li><a href="/captions/create">Create Caption</a></li>
-               <li><a href="/brands">Brand Stories</a></li>
-              <li><a href="/brands/create">Create Brand Story</a></li>
+              <li><a href="/"><b>Home</b></a></li>
+              <li><a href="/stories"><b>Stories</b></a></li>
+              <li><a href="/stories/create"><b>Create Story</b></a></li>
+               <li><a href="/captions"><b>Captions</b></a></li>
+              <li><a href="/captions/create"><b>Create Caption</b></a></li>
+               <li><a href="/brands"><b>Brand Stories</b></a></li>
+              <li><a href="/brands/create"><b>Create Brand Story</b></a></li>
              <!-- <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
