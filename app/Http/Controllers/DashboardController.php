@@ -38,6 +38,13 @@ use Imagine\Image\Box;
 use Imagine\Image\ImageInterface;
 
 class DashboardController extends Controller {
+	
+	
+	public function __construct(){
+		
+		$this->middleware('auth', ['only' => 'index']);
+		
+	}
 
 	/**
 	 * Display a listing of the resource.
