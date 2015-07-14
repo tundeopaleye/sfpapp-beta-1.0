@@ -26,7 +26,7 @@
 
 <div class="col-md-4 col-sm-12">
 	@if ($captions->count() > 0)
-	<h2>{{$captions->count()}}</h2>Captions
+	<h1>{{$captions->count()}}</h1><h3 style="margin-top:-10px;">Captions</h3>
 	<br><br>
 	@foreach ($captions as $caption)
 	<ul>

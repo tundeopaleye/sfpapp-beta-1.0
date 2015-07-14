@@ -22,12 +22,10 @@
               <li><a href="/captions/create"><b>Create Caption</b></a></li>
                <li><a href="/brands"><b>Brand Stories</b></a></li>
               <li><a href="/brands/create"><b>Create Brand Story</b></a></li>
-            
+             
             </ul>
             <ul class="nav navbar-nav navbar-right">
-             
-              <li><a href="/dashboard">Dashboard</a></li>
-              <li><a href="/logout">Logout</a></li>
+             <li><a href="/login">Login</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

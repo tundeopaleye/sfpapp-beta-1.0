@@ -66,7 +66,7 @@
 	
 	<hr>
 	
-	@include('layouts.partials.mainnav')
+	@include('layouts.partials.mainnavout')
 	
 	<hr>
 	
