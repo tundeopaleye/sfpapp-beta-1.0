@@ -127,7 +127,7 @@ class CaptionsController extends Controller {
 			//$content = $filesystem->disk('local')->get('test.txt');
 			//$filesystem->disk('s3')->put('test.txt', $image);
 			//Storage::disk('local')->put('file.txt', 'Contents');
-			\Storage::disk('s3')->put($filet , $image);
+			\Storage::disk('s3')->put($filet , $image->__toString());
 			}
 		
 
