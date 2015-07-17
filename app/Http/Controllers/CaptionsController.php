@@ -53,7 +53,7 @@ class CaptionsController extends Controller {
 		
         $categories = Category::lists('name','id');    
 		//$imagepath = \Storage::disk('s3')->get(public_path());
-        $contents = Storage::get('https://sfpapp.s3.amazonaws.com/home/forge/default/releases/20150717152636/public/images/1437146929-sfp.jpg');   
+        $contents = Storage::get('https://sfpapp.s3.amazonaws.com/images/');   
 		return view('captions.index')->with('captions', Caption::orderBy('id','DESC')->paginate(12))->with('contents', $contents); //Temporary paginate 4
 			
 			
@@ -108,6 +108,8 @@ class CaptionsController extends Controller {
 			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
+			$pathb = public_path() .'/images/';
+			$path2b = public_path() .'/thumbnails/';
 
                         //$path = public_path() .'/images/';
 			//$path2 = public_path() .'/thumbnails/';
@@ -129,8 +131,8 @@ class CaptionsController extends Controller {
 			//$content = $filesystem->disk('local')->get('test.txt');
 			//$filesystem->disk('s3')->put('test.txt', $image);
 			//Storage::disk('local')->put('file.txt', 'Contents');
-			\Storage::disk('s3')->put($path.$filet , $image->__toString());
-			\Storage::disk('s3')->put($path2.$filet , $thumb->__toString());
+			\Storage::disk('s3')->put($pathb.$filet , $image->__toString());
+			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
 
