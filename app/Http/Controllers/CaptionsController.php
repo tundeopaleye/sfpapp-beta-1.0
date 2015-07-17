@@ -117,7 +117,9 @@ class CaptionsController extends Controller {
 				    $constraint->aspectRatio();
 				})
 				->save($path2 . $filet);
-				
+			$thumb = $image->resize(300, null, function ($constraint) {
+				    $constraint->aspectRatio();
+				})
 			//Flysystem::put('hi.txt', 'foo');	
 			//Flysystem::connection('s3')->put('hi.txt', 'foo');
 			//Flysystem::put('hi.txt', 'foo');
@@ -127,7 +129,8 @@ class CaptionsController extends Controller {
 			//$content = $filesystem->disk('local')->get('test.txt');
 			//$filesystem->disk('s3')->put('test.txt', $image);
 			//Storage::disk('local')->put('file.txt', 'Contents');
-			\Storage::disk('s3')->put($filet , $image->__toString());
+			\Storage::disk('s3')->put($path.$filet , $image->__toString());
+			\Storage::disk('s3')->put($path2.$filet , $thumb->__toString());
 			}
 		
 
