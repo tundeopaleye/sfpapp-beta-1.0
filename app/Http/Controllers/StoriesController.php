@@ -29,7 +29,7 @@ use Image;
 use Imagine\Image\Box;
 use Imagine\Image\ImageInterface;
 
-
+use Illuminate\Contracts\Filesystem\Filesystem;
 
 //use App\StoryFormRequest;
 
@@ -90,12 +90,11 @@ class StoriesController extends Controller {
 	 */
 	public function store(StoryFormRequest $request)
 	{
-		//
+		// File Upload
 		if (Input::hasFile('thumbnail'))
 			{				
 				$image = Image::make(Input::file('thumbnail')->getRealPath());	
-				//$ext = pathinfo(Input::file('thumbnail'), PATHINFO_EXTENSION);
-	    	//	$extension = $image->getExtension();
+				
 	    	$mime = $image->mime();  //edited due to updated to 2.x
 			if ($mime == 'image/jpeg')
 			    $ext = '.jpg';
@@ -105,7 +104,6 @@ class StoriesController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
-			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext; //$filet = time() . '-sfp'.$ext;
 			$filet = time() . '-sfp'.$ext;
 			
 			$path = public_path() .'/images/';
@@ -120,10 +118,12 @@ class StoriesController extends Controller {
 				//->greyscale()
 				->save($path2 . $filet);
 				
-				
+				//Storage::disk('s3')->put('images/' . $filet, file_get_contents($image));
+				//Storage::disk('s3')->put('thumbnails/' . $filet, file_get_contents($image));
+				//Storage::disk('s3')->put('uploads/' . $filename, file_get_contents($file));
 			}
 	
-	
+	// DB Input
 	
 		$story = new Story(array(
 			'title' => $request->get('title'),

@@ -29,8 +29,13 @@ use Image;
 use Imagine\Image\Box;
 use Imagine\Image\ImageInterface;
 
-class CaptionsController extends Controller {
-	
+use Illuminate\Contracts\Filesystem\Filesystem;
+use GrahamCampbell\Flysystem\Facades\Flysystem;
+use Storage;
+
+//use \League\Flysystem\Filesystem;
+
+class CaptionsController extends Controller {	
 	
 	public function __construct(){
 		
@@ -113,7 +118,16 @@ class CaptionsController extends Controller {
 				})
 				->save($path2 . $filet);
 				
-				
+			//Flysystem::put('hi.txt', 'foo');	
+			//Flysystem::connection('s3')->put('hi.txt', 'foo');
+			//Flysystem::put('hi.txt', 'foo');
+			//Storage::disk('s3')->put('file.txt', 'Contents');
+			
+			//$content = $filesystem->disk('local')->get('test.txt');
+			//$content = $filesystem->disk('local')->get('test.txt');
+			//$filesystem->disk('s3')->put('test.txt', $image);
+			//Storage::disk('local')->put('file.txt', 'Contents');
+			\Storage::disk('s3')->put($filet , $image);
 			}
 		
 

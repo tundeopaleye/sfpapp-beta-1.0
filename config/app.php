@@ -137,11 +137,14 @@ return [
 		'Illuminate\View\ViewServiceProvider',
 		//'Collective\Html\HtmlServiceProvider',
 		'Illuminate\Html\HtmlServiceProvider',
+		'Illuminate\Broadcasting\BroadcastServiceProvider',
 		'Bootstrapper\BootstrapperServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 		'Laracasts\Flash\FlashServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
+		'GrahamCampbell\Flysystem\FlysystemServiceProvider',
+		
 
 		/*
 		 * Application Service Providers...
@@ -229,6 +232,7 @@ return [
 		'Image'		=> 'Intervention\Image\Facades\Image',
 		'Flash' => 'Laracasts\Flash\Flash',
 		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
+		'Flysystem' => 'GrahamCampbell\Flysystem\Facades\Flysystem',
 
 	],
 
