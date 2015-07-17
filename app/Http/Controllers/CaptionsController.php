@@ -52,9 +52,9 @@ class CaptionsController extends Controller {
 	{
 		
         $categories = Category::lists('name','id');    
-		$imagepath = \Storage::disk('s3')->get(public_path());
+		//$imagepath = \Storage::disk('s3')->get(public_path());
            
-		return view('captions.index')->with('captions', Caption::orderBy('id','DESC')->paginate(12))->with('imagepath', $imagepath); //Temporary paginate 4
+		return view('captions.index')->with('captions', Caption::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
 			
 			
 			
