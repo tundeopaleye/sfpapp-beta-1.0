@@ -95,7 +95,7 @@ class CaptionsController extends Controller {
 		if (Input::hasFile('thumbnail'))
 			{
 			$image = Image::make(Input::file('thumbnail')->getRealPath());	
-			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	
+			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	 // For thumbnail?
 	    	$mime = $image->mime();  //edited due to updated to 2.x
 			if ($mime == 'image/jpeg')
 			    $ext = '.jpg';
@@ -105,7 +105,7 @@ class CaptionsController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
-			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext;
+			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext; // maybe add random too?
 			$filet = time() . '-sfp'.$ext;
 			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
@@ -113,32 +113,22 @@ class CaptionsController extends Controller {
 			$pathb = 'images/';
 			$path2b = 'thumbnails/';
 
-                        //$path = public_path() .'/images/';
-			//$path2 = public_path() .'/thumbnails/';
+            /*
+			 * Image upload
+			 * */
 
 
 			$imager = $image->save($path . $filet);
 			\Storage::disk('s3')->put($pathb.$filet , $imager->__toString());
-				/*->resize(300, null, function ($constraint) {
-				    $constraint->aspectRatio();
-				})
-				->save($path2 . $filet);
-				
-			$thumb = $image->resize(300, null);
-				 * */
 			
-			/*$thumb = $image->save($path . $filet)->resize(300, null, function ($constraint) {
-				    $constraint->aspectRatio();
-				}); */
-				
-		//	$thumb = $imaget->resize(300, null)->save($path2 . $filet);	// works without constraint function
-			
-			
+			/*
+			 * Thumbnail upload
+			 * */
+			 
 			$thumb = $imaget->resize(300, null, function ($constraint) {
 				    $constraint->aspectRatio();
 				})
 				->save($path2 . $filet);
-			
 			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
