@@ -117,13 +117,14 @@ class CaptionsController extends Controller {
 			//$path2 = public_path() .'/thumbnails/';
 
 
-			$image->save($path . $filet)
-				->resize(300, null, function ($constraint) {
+			$imager->save($path . $filet);
+				/*->resize(300, null, function ($constraint) {
 				    $constraint->aspectRatio();
 				})
 				->save($path2 . $filet);
 				
 			//$thumb = $image->resize(300, null);
+				 * */
 			
 			$thumb = $image->save($path . $filet)
 				->resize(300, null, function ($constraint) {
@@ -131,16 +132,8 @@ class CaptionsController extends Controller {
 				});
 				
 				
-			//Flysystem::put('hi.txt', 'foo');	
-			//Flysystem::connection('s3')->put('hi.txt', 'foo');
-			//Flysystem::put('hi.txt', 'foo');
-			//Storage::disk('s3')->put('file.txt', 'Contents');
 			
-			//$content = $filesystem->disk('local')->get('test.txt');
-			//$content = $filesystem->disk('local')->get('test.txt');
-			//$filesystem->disk('s3')->put('test.txt', $image);
-			//Storage::disk('local')->put('file.txt', 'Contents');
-			\Storage::disk('s3')->put($pathb.$filet , $image->__toString());
+			\Storage::disk('s3')->put($pathb.$filet , $imager->__toString());
 			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
