@@ -1,10 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
 
 //use Requests;
+
+use App\Http\Controllers\Controller;
 
 use App\Story;
 
@@ -14,6 +14,9 @@ use App\User;
 
 use App\Like;
 
+
+use Illuminate\Http\Request;
+
 use App\Http\Requests\StoryFormRequest;
 
 use App\Http\Requests\StoryUpdateRequest;
@@ -22,12 +25,11 @@ use Auth;
 
 use Input;
 
-use Imagine;
+
+
+use Intervention\Image\ImageManager;
 
 use Image;
-
-use Imagine\Image\Box;
-use Imagine\Image\ImageInterface;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use GrahamCampbell\Flysystem\Facades\Flysystem;
