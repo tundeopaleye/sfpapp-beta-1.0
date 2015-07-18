@@ -95,7 +95,7 @@ class CaptionsController extends Controller {
 		if (Input::hasFile('thumbnail'))
 			{
 			$image = Image::make(Input::file('thumbnail')->getRealPath());	
-				
+			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	
 	    	$mime = $image->mime();  //edited due to updated to 2.x
 			if ($mime == 'image/jpeg')
 			    $ext = '.jpg';
@@ -131,7 +131,7 @@ class CaptionsController extends Controller {
 				    $constraint->aspectRatio();
 				}); */
 				
-			$thumb = $image->resize(300, null);	
+			$thumb = $imaget->resize(300, null);	
 			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
