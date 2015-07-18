@@ -1,10 +1,10 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 //use Requests;
-
-use App\Http\Controllers\Controller;
 
 use App\Story;
 
@@ -14,9 +14,6 @@ use App\User;
 
 use App\Like;
 
-
-use Illuminate\Http\Request;
-
 use App\Http\Requests\StoryFormRequest;
 
 use App\Http\Requests\StoryUpdateRequest;
@@ -25,20 +22,20 @@ use Auth;
 
 use Input;
 
-
-
-use Intervention\Image\ImageManager;
+use Imagine;
 
 use Image;
+
+use Imagine\Image\Box;
+use Imagine\Image\ImageInterface;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
 use GrahamCampbell\Flysystem\Facades\Flysystem;
 use Storage;
 
+//use \League\Flysystem\Filesystem;
 
-
-class StoriesController extends Controller {
-	
+class StoriesController extends Controller {	
 	
 	public function __construct(){
 		
@@ -55,35 +52,32 @@ class StoriesController extends Controller {
 	{
 		
         $categories = Category::lists('name','id');    
-           
-		return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 4
+		return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 12
 			
-		 
+			
+			
+
+			
+			
+			
+			
+			
+			
+          
 	}
-	
-	
-	
-	
 
 	/**
 	 * Show the form for creating a new resource.
 	 *
 	 * @return Response
 	 */
-
-	public function create()	
+	public function create()
 	{
-		//
 		
-		//$categories = \App\Category::all();
 		$categories = Category::lists('name','id');
 		return view('stories.create')->with('categories', $categories);
 		
-		///stories/{{$story->id}}/edit
-		/*
-		$categories = \App\Category::stories('name', 'id');
-		return view('stories.create')->with('categories', $categories);
-		 * */
+		
 	}
 
 	/**
@@ -93,9 +87,9 @@ class StoriesController extends Controller {
 	 */
 	public function store(StoryFormRequest $request)
 	{
-		// File Upload
+		//
 		if (Input::hasFile('thumbnail'))
-			{				
+			{
 			$image = Image::make(Input::file('thumbnail')->getRealPath());	
 			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	 // For thumbnail?
 	    	$mime = $image->mime();  //edited due to updated to 2.x
@@ -133,9 +127,8 @@ class StoriesController extends Controller {
 				->save($path2 . $filet);
 			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
-	
-	// DB Input
-	
+		
+
 		$story = new Story(array(
 			'title' => $request->get('title'),
 			'user_id' => Auth::user()->id,
@@ -144,19 +137,17 @@ class StoriesController extends Controller {
 	));
 	
 	
-
 	Auth::user()->stories()->save($story);
 	
 			if (count($request->get('categories')) > 0) {
 			$story->categories()->sync($request->get('categories'));
-			}	
-	\Session::flash('flash_message', 'Your Story has been created!');	
-	return redirect('stories/'.$story->id.'/edit');
+			}
 	
-	}
+	\Session::flash('flash_message', 'Your story has been created!');
 
-
-
+	
+	return redirect('stories/'.$story->id.'/edit');
+		}
 
 
 	/**
@@ -167,7 +158,7 @@ class StoriesController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		
 		$story = Story::find($id);
 		$user = User::find($story->user_id);
 		$story->story = nl2br($story->story);
@@ -176,6 +167,9 @@ class StoriesController extends Controller {
 		return view('stories.show')->with('story', $story)->with('user', $user);
 		
 		
+		
+		
+	
 	}
 
 	/**
@@ -191,8 +185,6 @@ class StoriesController extends Controller {
 		$story = Story::find($id);
 
 		return view('stories.edit')->with('story', $story)->with('categories', $categories);
-		
-		
 	}
 
 	/**
@@ -201,7 +193,7 @@ class StoriesController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id, StoryUpdateRequest $request)
+	public function update($id, StorynUpdateRequest $request)
 	{
 			$story = Story::find($id);
 			
@@ -210,16 +202,14 @@ class StoriesController extends Controller {
 			'user_id' => $request->get('user_id'),
 			'thumbnail' => $request->get('thumbnail'),
 			'story' => $request->get('story')
-			
 			]);
 						
-			
 			if (count($request->get('categories')) > 0) {
 			$story->categories()->sync($request->get('categories'));
 			}
 		//
 		
-		return \Redirect::route('stories.edit', array($story->id))->with('message', 'Your list has been updated!');
+		return \Redirect::route('stories.edit', array($story->id))->with('message', 'Your story has been updated!');
 	}
 
 	/**
@@ -236,8 +226,5 @@ class StoriesController extends Controller {
 		return \Redirect::route('stories.index')
 			->with('message', 'The story has been deleted!');
 	}
-	
-	
-		
-	
+
 }
