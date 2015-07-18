@@ -21,7 +21,7 @@
   				<br><br>
 	            
 	           <h5 style="color: #f57f20;">Captioned by: {{ $caption->user->name }}</h5>
-	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/captions/{{$caption->id}}"><img src="https://sfpapp.s3.amazonaws.com/1437146034-sfp.jpg"></a></div></p>
+	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/captions/{{$caption->id}}"><img src="https://sfpapp.s3.amazonaws.com/{{$caption->thumbnail}}"></a></div></p>
 	            <p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 2em;">{{ str_limit($caption->caption, $limit = 250, $end = '...') }}</p>
 	
 	            <span style="color:#f57f20;"> {{ $caption->reposts->count() }} Retells</span> | <span style="color:#f57f20;">{{ $caption->comments->count() }} Comment(s)</span> | {{ $caption->likes->count() }} likes<br>
