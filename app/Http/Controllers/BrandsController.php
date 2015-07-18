@@ -31,6 +31,11 @@ use Intervention\Image\ImageManager;
 
 use Image;
 
+use Illuminate\Contracts\Filesystem\Filesystem;
+use GrahamCampbell\Flysystem\Facades\Flysystem;
+use Storage;
+
+
 
 class BrandsController extends Controller {
 	

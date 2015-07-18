@@ -30,8 +30,9 @@ use Imagine\Image\Box;
 use Imagine\Image\ImageInterface;
 
 use Illuminate\Contracts\Filesystem\Filesystem;
+use GrahamCampbell\Flysystem\Facades\Flysystem;
+use Storage;
 
-//use App\StoryFormRequest;
 
 
 class StoriesController extends Controller {
