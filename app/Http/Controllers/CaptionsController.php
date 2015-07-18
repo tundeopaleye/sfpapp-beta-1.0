@@ -117,7 +117,7 @@ class CaptionsController extends Controller {
 			//$path2 = public_path() .'/thumbnails/';
 
 
-			$imager->save($path . $filet);
+			$imager = $image->save($path . $filet);
 				/*->resize(300, null, function ($constraint) {
 				    $constraint->aspectRatio();
 				})
