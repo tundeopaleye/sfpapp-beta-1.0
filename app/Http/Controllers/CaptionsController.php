@@ -110,8 +110,8 @@ class CaptionsController extends Controller {
 			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
-			$pathb = public_path() .'/images/';
-			$path2b = public_path() .'/thumbnails/';
+			$pathb = 'https://sfpapp.s3.amazonaws.com/images/';
+			$path2b = 'https://sfpapp.s3.amazonaws.com/thumbnails/';
 
                         //$path = public_path() .'/images/';
 			//$path2 = public_path() .'/thumbnails/';
