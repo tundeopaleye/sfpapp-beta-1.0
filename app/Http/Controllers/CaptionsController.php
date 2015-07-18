@@ -131,7 +131,7 @@ class CaptionsController extends Controller {
 				    $constraint->aspectRatio();
 				}); */
 				
-			$thumb = $imaget->resize(300, null);	
+			$thumb = $imaget->resize(300, null)->save($path2 . $filet);	
 			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
