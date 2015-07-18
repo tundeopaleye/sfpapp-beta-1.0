@@ -225,7 +225,7 @@ class CaptionsController extends Controller {
 	public function destroy($id)
 	{
 		//
-		Brand::destroy($id);
+		Caption::destroy($id);
 
 		return \Redirect::route('captions.index')
 			->with('message', 'The caption has been deleted!');
