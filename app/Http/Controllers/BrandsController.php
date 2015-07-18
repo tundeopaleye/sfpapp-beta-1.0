@@ -82,8 +82,8 @@ class BrandsController extends Controller {
 			{
 				
 				
-			$image = Image::make(Input::file('thumbnail')->getRealPath());	
-				
+		$image = Image::make(Input::file('thumbnail')->getRealPath());	
+			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	 // For thumbnail?
 	    	$mime = $image->mime();  //edited due to updated to 2.x
 			if ($mime == 'image/jpeg')
 			    $ext = '.jpg';
@@ -93,26 +93,31 @@ class BrandsController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
-			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext;
+			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext; // maybe add random too?
 			$filet = time() . '-sfp'.$ext;
 			//$filet2 = time() . '-sfpthumbnail';
-			
-            // $path = '../public_html/images/';
-			// $path2 = '../public_html/thumbnails/';
-
-            $path = public_path() .'/images/';
+			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
+			$pathb = 'images/';
+			$path2b = 'thumbnails/';
+
+            /*
+			 * Image upload
+			 * */
 
 
-			$image->save($path . $filet)
-				->resize(300, null, function ($constraint) {
+			$imager = $image->save($path . $filet);
+			\Storage::disk('s3')->put($pathb.$filet , $imager->__toString());
+			
+			/*
+			 * Thumbnail upload
+			 * */
+			 
+			$thumb = $imaget->resize(300, null, function ($constraint) {
 				    $constraint->aspectRatio();
 				})
 				->save($path2 . $filet);
-				
-				
-				
-				
+			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 		
 

@@ -93,8 +93,8 @@ class StoriesController extends Controller {
 		// File Upload
 		if (Input::hasFile('thumbnail'))
 			{				
-				$image = Image::make(Input::file('thumbnail')->getRealPath());	
-				
+			$image = Image::make(Input::file('thumbnail')->getRealPath());	
+			$imaget = Image::make(Input::file('thumbnail')->getRealPath());	 // For thumbnail?
 	    	$mime = $image->mime();  //edited due to updated to 2.x
 			if ($mime == 'image/jpeg')
 			    $ext = '.jpg';
@@ -104,23 +104,31 @@ class StoriesController extends Controller {
 			    $ext = '.gif';
 			else
 			    $ext = '';
+			//$filet = rand(1000000000000,1000000000000000) . '-sfp'.$ext; // maybe add random too?
 			$filet = time() . '-sfp'.$ext;
-			
+			//$filet2 = time() . '-sfpthumbnail';
 			$path = public_path() .'/images/';
 			$path2 = public_path() .'/thumbnails/';
+			$pathb = 'images/';
+			$path2b = 'thumbnails/';
 
-            
-			$image->save($path . $filet)
-				->resize(300, null, function ($constraint) {
+            /*
+			 * Image upload
+			 * */
+
+
+			$imager = $image->save($path . $filet);
+			\Storage::disk('s3')->put($pathb.$filet , $imager->__toString());
+			
+			/*
+			 * Thumbnail upload
+			 * */
+			 
+			$thumb = $imaget->resize(300, null, function ($constraint) {
 				    $constraint->aspectRatio();
 				})
-				//->crop(300, 300)
-				//->greyscale()
 				->save($path2 . $filet);
-				
-				//Storage::disk('s3')->put('images/' . $filet, file_get_contents($image));
-				//Storage::disk('s3')->put('thumbnails/' . $filet, file_get_contents($image));
-				//Storage::disk('s3')->put('uploads/' . $filename, file_get_contents($file));
+			\Storage::disk('s3')->put($path2b.$filet , $thumb->__toString());
 			}
 	
 	// DB Input

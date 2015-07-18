@@ -22,7 +22,7 @@
 @endforeach
 </ul>
 
-<div style="height:30em; width:auto; overflow: hidden; border:3px solid #f57f20; background-color: #efefff;" align="center">{!!HTML::image("images/$brand->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
+<div style="height:30em; width:auto; overflow: hidden; border:3px solid #f57f20; background-color: #efefff;" align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/$brand->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
 
 <div class="form-group">
 <h1>Brand Story: <b>{{ $brand->title }}</b></h1>

@@ -15,7 +15,7 @@
 {!! Form::model($caption, array('method' => 'put', 'route' => ['captions.update', $caption->id], 'files' => true, 'class' => 'form')) !!}
 
 
-<div style="height:30em; overflow: hidden;" align="center">{!!HTML::image("images/$caption->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
+<div style="height:30em; overflow: hidden;" align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/$caption->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
 
 <div class="form-group">
 {!! Form::label('Title') !!}

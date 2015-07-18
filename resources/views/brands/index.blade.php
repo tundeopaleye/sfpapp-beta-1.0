@@ -23,7 +23,7 @@
   				<br><br>
 	            <p class="orange"><h3>{{ $brand->title }}</h3></p>
 	           <h5 style="color: #f57f20;">Written by: {{ $brand->user->name }}</h5>
-	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/brands/{{$brand->id}}">{!!HTML::image("thumbnails/$brand->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
+	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/brands/{{$brand->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$brand->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p>{{ str_limit($brand->brand, $limit = 250, $end = '...') }}</p>
 	
 	            <span style="color:#f57f20;"> {{ $brand->reposts->count() }} Retells</span> | <span style="color:#f57f20;">{{ $brand->comments->count() }} Comment(s)</span> | {{ $brand->likes->count() }} likes<br>

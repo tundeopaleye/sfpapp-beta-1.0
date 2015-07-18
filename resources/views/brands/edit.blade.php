@@ -15,7 +15,7 @@
 {!! Form::model($brand, array('method' => 'put', 'route' => ['brands.update', $brand->id], 'files' => true, 'class' => 'form')) !!}
 
 
-<div style="height:30em; overflow: hidden;" align="center">{!!HTML::image("images/$brand->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
+<div style="height:30em; overflow: hidden;" align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/$brand->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
 
 <div class="form-group">
 {!! Form::label('Title') !!}
