@@ -55,7 +55,7 @@ class CaptionsController extends Controller {
 		//$imagepath = \Storage::disk('s3')->get(public_path());
        // $contents = \Storage::disk('s3')->get($path2b.$filet);
       //  $contents = \Storage::disk('s3')->get($path2b);
-      $contents = Storage::disk('s3')->('1437146034-sfp.jpg');
+      $contents = \Storage::disk('s3')->('https://sfpapp.s3.amazonaws.com/1437146034-sfp.jpg');
 		return view('captions.index')->with('captions', Caption::orderBy('id','DESC')->paginate(12))->with('contents', $contents); //Temporary paginate 4
 			
 			
