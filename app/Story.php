@@ -8,19 +8,13 @@ class Story extends Model {
 
 	//
 	
-		protected $fillable = ['title', 'thumbnail', 'story', 'commentable_type1', 'likeable_type1'];
+		protected $fillable = ['title', 'thumbnail', 'story', 'commentable_type1'];
 		
 		
 		
 		use SoftDeletes;	
 		protected $dates = ['deleted_at'];
-	/*	
-		public function stories()
- 		 {
-    	return $this->has_many('Story')->order_by('id', 'asc');
-  		}
-		
-	*/	
+	
 	
 		public function user()
 		{

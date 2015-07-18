@@ -21,7 +21,7 @@
   				<br><br>
 	            <p class="orange"><h3>{{ $story->title }}</h3></p>
 	            <h5 style="color: #f57f20;">Written by: {{ $story->user->name }}<b></b></h5>
-	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/stories/{{$story->id}}">{!!HTML::image("thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
+	            <p><div style="height:10em; overflow: hidden; border:3px solid #f57f20; "><a href="/stories/{{$story->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p>{{ str_limit($story->story, $limit = 250, $end = '...') }}</p>
 	
 	            <span style="color:#f57f20;"> {{ $story->reposts->count() }} Retells</span> | <span style="color:#f57f20;">{{ $story->comments->count() }} Comment(s)</span> | {{ $story->likes->count() }} likes<br>
