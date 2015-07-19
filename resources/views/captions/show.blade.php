@@ -144,7 +144,7 @@ array('required', 'class'=>'form-control',
 
 <h3 style="color: #f57f20;">	Re:{{ $caption->title }} by {{ $repost->user->name }}</h3><!-- Temporarily dealing with user ID instead of name -->
 <p>
-	<div style="background-color: #000000; color: #ffffff; font-size: 1.25em; padding:2em;">{!! $repost->body !!}</div>
+	<div style="background-color: #000000; color: #ffffff; font-size: 1.25em; padding:1.2em;">{!! $repost->body !!}</div>
 </p>
 
 @endforeach
