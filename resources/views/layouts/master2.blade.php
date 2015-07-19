@@ -1,9 +1,6 @@
 <body>
 	<head>
-	<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<script src="http://code.jquery.com/jquery.js"></script>
-
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
+	<link rel="icon" href="fav.png" type="image/png" sizes="16x16">
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
