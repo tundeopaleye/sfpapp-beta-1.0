@@ -193,7 +193,7 @@ class StoriesController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id, StorynUpdateRequest $request)
+	public function update($id, StoryUpdateRequest $request)
 	{
 			$story = Story::find($id);
 			
