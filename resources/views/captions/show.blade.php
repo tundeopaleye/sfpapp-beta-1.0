@@ -29,7 +29,7 @@
 <h5 style="color: #f57f20;">Written by: <b>{{ $caption->user->name }}</b></h5> <!--Isn't this auth for the current authenticated user? -->
 </div>
 
-<div class="form-group" style="background-color:#000000; padding: 2em;">
+<div class="form-group" style="background-color:#000000; padding: 2em; color:#ffffff; font-size:2em;">
 {!! $caption->caption !!}
 </div>
 
