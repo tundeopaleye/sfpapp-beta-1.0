@@ -42,7 +42,7 @@ array('required', 'class'=>'form-control',
 
 <div>
 {!! Form::label('Categories') !!}
-{!! Form::select('categories', $categories, $caption->categories->lists('id'),
+{!! Form::select('categories', $categories, $caption->categories->lists('id')->all(),
 array('multiple'=>'multiple','name'=>'categories[]')) !!}
 </div>
 

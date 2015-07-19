@@ -177,8 +177,8 @@ class BrandsController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
 		$categories = Category::lists('name','id');
+		//$categories = Category::all('name','id');
 		$brand = Brand::find($id);
 
 		return view('brands.edit')->with('brand', $brand)->with('categories', $categories);

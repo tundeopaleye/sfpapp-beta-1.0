@@ -44,8 +44,10 @@ array('required', 'class'=>'form-control',
 
 <div>
 {!! Form::label('Categories') !!}
-{!! Form::select('categories', $categories, $brand->categories->lists('id'),
+Test brand no. {{ $brand->categories()->count() }}
+{!! Form::select('categories', $categories, $brand->categories->lists('id')->all(),
 array('multiple'=>'multiple','name'=>'categories[]')) !!}
+
 </div>
 
 

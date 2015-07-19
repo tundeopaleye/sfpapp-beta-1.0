@@ -35,6 +35,18 @@ class Brand extends Model {
 		//return $this->belongsToMany('App\Category')->withTimestamps();
 		return $this->belongsToMany('App\Category');
 		}
+		
+		/*
+		public function getTagListAttribute()
+
+		{
+		
+			return $this->categories->lists('id');
+		
+		}
+		 * */
+		
+		
 	    /*
 	    public function likes()
 	    {
