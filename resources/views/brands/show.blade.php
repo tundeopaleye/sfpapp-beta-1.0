@@ -71,10 +71,10 @@
 <div>
 <!-- Social Share -->
 
-<ul class="socialcount socialcount-small" data-url="http://www.storiesfrompictures.com/captions/{{$caption->id}}" data-facebook-action="recommend" data-counts="true" data-share-text="{{ str_limit($caption->caption, $limit = 100, $end = '...') }}">
-	<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.storiesfrompictures.com/captions/{{$caption->id}}" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count">Recommend</span></a></li>
-	<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://www.storiesfrompictures.com/captions/{{$caption->id}}" title="Share on Twitter"><span class="social-icon icon-twitter"></span><span class="count">Tweet</span></a></li>
-	<li class="googleplus"><a href="https://plus.google.com/share?url=http://www.storiesfrompictures.com/captions/{{$caption->id}}" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count">+1</span></a></li>
+<ul class="socialcount socialcount-small" data-url="http://www.storiesfrompictures.com/brands/{{$brand->id}}" data-facebook-action="recommend" data-counts="true" data-share-text="{{ str_limit($brand->brand, $limit = 100, $end = '...') }}">
+	<li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.storiesfrompictures.com/brands/{{$brand->id}}" title="Share on Facebook"><span class="social-icon icon-facebook"></span><span class="count">Recommend</span></a></li>
+	<li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://www.storiesfrompictures.com/brands/{{$brand->id}}" title="Share on Twitter"><span class="social-icon icon-twitter"></span><span class="count">Tweet</span></a></li>
+	<li class="googleplus"><a href="https://plus.google.com/share?url=http://www.storiesfrompictures.com/brands/{{$brand->id}}" title="Share on Google Plus"><span class="social-icon icon-googleplus"></span><span class="count">+1</span></a></li>
 </ul>
 
 <!-- Social Share ends -->
