@@ -55,8 +55,6 @@ class DashboardController extends Controller {
 	{
 		//
 		$categories = Category::lists('name','id'); 
-		//$story = Story::lists('title','id');
-		//$brands = Brand::lists('title','id');  
 		$brands = Brand::all()->where('user_id', Auth::user()->id);  
 		$captions = Caption::all()->where('user_id', Auth::user()->id); 
 		$stories = Story::all()->where('user_id', Auth::user()->id); 
@@ -85,7 +83,7 @@ class DashboardController extends Controller {
 	}
 
 	/**
-	 * Display the specified resource.
+	 * Display the specified resource. // not in use...only index
 	 *
 	 * @param  int  $id
 	 * @return Response
@@ -95,7 +93,7 @@ class DashboardController extends Controller {
 		//
 		$user = User::all();
 		$stories = Story::all();
-		return view('dashboard.index')->with('user', $user)->with('storie', $stories);
+		return view('dashboard.index')->with('user', $user)->with('stories', $stories);
 	}
 
 	/**

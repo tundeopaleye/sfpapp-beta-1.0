@@ -16,10 +16,15 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   
         <link href="/assets/styles.css" rel="stylesheet"/>
+        
+        <link href="/css/socialcount.css" rel="stylesheet"/>
+        <link href="/css/socialcount-with-icons.css" rel="stylesheet"/>
   
         <link rel="stylesheet" href="/assets/ladda/dist/ladda-themeless.min.css">
         <script src="/assets/ladda/dist/spin.min.js"></script>
         <script src="/assets/ladda/dist/ladda.min.js"></script>
+        
+        <script src="/js/socialcount.js"></script>
         
         <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
