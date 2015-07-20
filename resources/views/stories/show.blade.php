@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+<title>Story - Stories from Pictures</title>
+
 <script>
 
   function ConfirmDelete()

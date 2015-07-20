@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+<title>Brand - Stories from Pictures</title>
+
 <script>
 
   function ConfirmDelete()
