@@ -4,7 +4,7 @@
 
 <!--<h1>Latest Stories</h1>-->
 
-
+<title>Stories - Stories from Pictures</title>
 	
 	
 	

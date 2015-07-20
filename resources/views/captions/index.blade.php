@@ -3,7 +3,7 @@
 @section('content')
 
 <!--<h1>Latest Stories</h1>-->
-
+<title>Captions - Stories from Pictures</title>
 <!--<div class="row">-->
 	
 	

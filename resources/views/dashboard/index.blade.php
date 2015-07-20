@@ -4,6 +4,8 @@
 
 <!--<h1>Latest Stories</h1>-->
 
+<title>Dashboard - Stories from Pictures</title>
+
 <h1>Dashboard</h1>
 <br>
 
