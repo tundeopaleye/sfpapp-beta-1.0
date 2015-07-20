@@ -27,11 +27,11 @@
 <div style="height:30em; width:auto; overflow: hidden; border:3px solid #f57f20; background-color: #efefff;" align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/$caption->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}</div>
 
 <div class="form-group">
-<h1>Caption: <b>{{ $caption->title }}</b></h1>
-<h5 style="color: #f57f20;">Written by: <b>{{ $caption->user->name }}</b></h5> <!--Isn't this auth for the current authenticated user? -->
+
+<h5 style="color: #f57f20;">Captioned by: <b>{{ $caption->user->name }}</b></h5> <!--Isn't this auth for the current authenticated user? -->
 </div>
 
-<div class="form-group" style="background-color:#000000; padding: 2em; color:#ffffff; font-size:2em;">
+<div class="form-group" style="background-color:#000000; padding: 2em; color:#ffffff; font-size:2.5em;">
 {!! $caption->caption !!}
 </div>
 
