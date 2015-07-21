@@ -162,13 +162,13 @@ class CaptionsController extends Controller {
 	 */
 	public function show($id)
 	{
-		
+		$categories = Category::lists('name','id')->all();
 		$caption = Caption::find($id);
 		$user = User::find($caption->user_id);
 		$caption->caption = nl2br($caption->caption);
 		
 		
-		return view('captions.show')->with('caption', $caption)->with('user', $user);
+		return view('captions.show')->with('caption', $caption)->with('user', $user)->with('categories', $categories);
 		
 		
 		
