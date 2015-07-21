@@ -38,7 +38,7 @@
 </div>
 <div>
 <ul>
-@foreach($caption->categories as $category)
+@foreach($brand->categories as $category)
 <li><a href="/categories/{{$category->id}}">{{ $category->name }}</a></li>
 @endforeach
 </ul>
