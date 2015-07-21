@@ -48,7 +48,13 @@
 </div>
 
 </div>
-
+<div>
+<ul>
+@foreach($caption->categories as $category)
+<li><a href="/categories/{{$category->id}}">{{ $category->name }}</a></li>
+@endforeach
+</ul>
+</div>
 <!-- The like button -->
 <div>
             Likes: {{ $story->likes()->count() }}
