@@ -35,7 +35,7 @@
 {!! $story->story !!}
 </div>
 
-<div>
+<!--<div>
 	@unless ($story->categories->isEmpty())
 
 <h5>Categories</h5>
@@ -45,7 +45,7 @@
 	@endforeach
 
 @endunless
-</div>
+</div>-->
 
 </div>
 <div>
