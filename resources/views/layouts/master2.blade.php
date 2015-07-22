@@ -1,6 +1,6 @@
 <body>
 	<head>
-	<link rel="icon" href="fav.png" type="image/png" sizes="16x16">
+	<link rel="icon" href="https://sfpapp.s3.amazonaws.com/images/fav.png" type="image/png" sizes="16x16">
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

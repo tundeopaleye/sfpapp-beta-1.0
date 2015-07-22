@@ -1,9 +1,11 @@
 <body>
 	<head>
 		
-		<link rel="icon" href="fav.png" type="image/png" sizes="16x16">
-	
-
+		<link rel="icon" href="https://sfpapp.s3.amazonaws.com/images/fav.png" type="image/png" sizes="16x16">
+			
+		<meta property="og:title" content="Stories From Pictures" />
+		<meta property="og:description" content="Stories From Pictures" />
+		<!--<meta property="og:image" content="thumbnail_image" />-->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <!-- Latest compiled and minified CSS -->
