@@ -155,8 +155,8 @@
     $(window).load(function() {
         $('#slider').nivoSlider(
         	{   
-    prevText: '<img src="https://sfpapp.s3.amazonaws.com/images/left-arrow.png">',                 // Prev directionNav text
-    nextText: '<img src="https://sfpapp.s3.amazonaws.com/images/right-arrow.png">',                 // Next directionNav text    
+    prevText: '<img src="https://sfpapp.s3.amazonaws.com/images/left-arrow2.png">',                 // Prev directionNav text
+    nextText: '<img src="https://sfpapp.s3.amazonaws.com/images/right-arrow2.png">',                 // Next directionNav text    
 }
         );
     });
