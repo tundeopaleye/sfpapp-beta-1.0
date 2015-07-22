@@ -153,8 +153,16 @@
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
+        $('#slider').nivoSlider(
+        	{   
+    prevText: '<img src="images/left-arrow.png>',                 // Prev directionNav text
+    nextText: '<img src="images/right-arrow.png>"',                 // Next directionNav text    
+}
+        );
     });
+    
+    
+   
     </script>	
 	
 	
