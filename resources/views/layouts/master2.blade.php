@@ -59,7 +59,7 @@
 
 <div class="container">
 		
-	<div align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit3.png",'', array('width'=>'auto','height'=>'auto')) !!}</div>
+	<div align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit4.png",'', array('width'=>'auto','height'=>'auto')) !!}</div>
 	
 	<hr>
 	
