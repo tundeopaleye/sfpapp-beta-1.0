@@ -104,7 +104,7 @@
         		
 <div id="grid" class="col-md-12 col-sm-12"> 
   			
-	           <h4 style="color: #f57f20;">{{$story->title}}</h4>
+	           <h4 style="color: #ff8a00;">{{$story->title}}</h4>
 	           <h5 style="color: #000;">Told by: {{ $story->user->name }}</h5>
 	            <p><div style="height:6em; overflow: hidden; border:3px solid #eee; "><a href="/stories/{{$story->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p style="background-color:#eee; color:#000; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($story->story, $limit = 50, $end = '...') }}</p>
@@ -112,7 +112,7 @@
 				</div>
 	            
 				<div id="grid" class="col-md-12 col-sm-12"> 				
-				<h4 style="color: #f57f20;">{{$caption->title}}</h4>
+				<h4 style="color: #ff8a00;">{{$caption->title}}</h4>
 				<h5 style="color: #000;">Captioned by: {{ $caption->user->name }}</h5>
 				<p><div style="height:6em; overflow: hidden; border:3px solid #000; "><a href="/captions/{{$caption->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$caption->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 				<p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($caption->caption, $limit = 50, $end = '...') }}</p>
@@ -130,10 +130,10 @@
         		<div align="center"><h3>Featured Brand Story</h3></div>
         		
         		<div id="grid" class="col-md-12 col-sm-12"padding-bottom: 3em;"> 
-				<h3 style="color: #f57f20;">{{$brand->title}}</h3>
+				<h3 style="color: #ff8a00;">{{$brand->title}}</h3>
 				<h5 style="color: #000;">Told by: {{ $brand->user->name }}</h5>
-				<p><div style="height:12em; overflow: hidden; border:3px solid #f57f20; "><a href="/brands/{{$brand->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$brand->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
-				<p style="background-color:#f57f20; color:#fff; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($brand->brand, $limit = 250, $end = '...') }}</p>
+				<p><div style="height:12em; overflow: hidden; border:3px solid #ff8a00; "><a href="/brands/{{$brand->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$brand->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
+				<p style="background-color:#ff8a00; color:#fff; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($brand->brand, $limit = 250, $end = '...') }}</p>
 				<a href="/brands/{{$brand->id}}">See Full Brand Story</a> 
 				</div>	
         		
