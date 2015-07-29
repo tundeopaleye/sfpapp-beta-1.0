@@ -6,7 +6,7 @@
 
 <!--<div class="row">-->
 	
-<title>Brand Stories - Stories from Pictures</title>	
+<title>Brand Stories - Pictolit</title>	
 	
 	
 	<div class="row clearfix">
