@@ -44,7 +44,7 @@
   
 </head>
 
-<div style="background:#ff8a00; padding:1em; margin-bottom: 1.5em;">
+<div style="background:#f57f20; padding:1em; margin-bottom: 1.5em;">
 	<div align="right">
 		@if (Auth::check())
 			Welcome, <b>{{ Auth::user()->name }}!</b>
