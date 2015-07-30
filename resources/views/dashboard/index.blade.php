@@ -15,7 +15,7 @@
 	<br><br>
 	@foreach ($stories as $story)
 	<ul>
-	<li><b>{{ $story->title }}</b> [edit | view | delete]</li>
+	<li><b>{{ $story->title }}</b> [<a href="/stories/{{$story->id}}/edit">edit</a> | <a href="/stories/{{$story->id}}">view</a> | delete]</li>
  </ul>
  @endforeach
  @else
@@ -32,7 +32,7 @@
 	<br><br>
 	@foreach ($captions as $caption)
 	<ul>
-	<li><b>{{ $caption->title }}</b> [edit | view | delete]</li>
+	<li><b>{{ $caption->title }}</b> [<a href="/captions/{{$caption->id}}/edit">edit</a> | <a href="/captions/{{$caption->id}}">view</a> | delete]</li>
  </ul>
  @endforeach
  @else
@@ -49,7 +49,7 @@
 	<br><br>
 	@foreach ($brands as $brand)
 	<ul>
-	<li><b>{{ $brand->title }}</b> [<a href="/brands/{{$brand->id}}/edit" class="btn btn-primary">edit</a> | view | delete]</li>
+	<li><b>{{ $brand->title }}</b> [<a href="/brands/{{$brand->id}}/edit">edit</a> | <a href="/brands/{{$brand->id}}">view</a> | delete]</li>
  </ul>
  @endforeach
  @else
