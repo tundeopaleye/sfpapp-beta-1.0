@@ -62,8 +62,15 @@
 	<div align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit4p.png",'', array('width'=>'auto','height'=>'auto')) !!}</div>
 	
 	<hr>
+	@if (!Auth::check())
+			
+		@include('layouts.partials.mainnavout')
+		
+	@else
 	
-	@include('layouts.partials.mainnavout')
+		@include('layouts.partials.mainnav')
+			
+	@endif	
 	
 	<hr>
 	

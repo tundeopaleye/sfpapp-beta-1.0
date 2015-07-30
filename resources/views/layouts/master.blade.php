@@ -69,7 +69,15 @@
 	
 	<hr>
 	
-	@include('layouts.partials.mainnav')
+	@if (!Auth::check())
+			
+		@include('layouts.partials.mainnavout')
+		
+	@else
+	
+		@include('layouts.partials.mainnav')
+			
+	@endif	
 	
 	<hr>
 	
