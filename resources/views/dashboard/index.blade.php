@@ -49,7 +49,7 @@
 	<br><br>
 	@foreach ($brands as $brand)
 	<ul>
-	<li><b>{{ $brand->title }}</b> [edit | view | delete]</li>
+	<li><b>{{ $brand->title }}</b> [<a href="/brands/{{$brand->id}}/edit" class="btn btn-primary">edit</a> | view | delete]</li>
  </ul>
  @endforeach
  @else
