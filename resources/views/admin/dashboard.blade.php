@@ -11,7 +11,7 @@
 
 <div class="col-md-4 col-sm-12">
 	@if ($stories->count() > 0)
-	h1>{{$stories->count()}}</h1><h3 style="margin-top:-10px;">Stories</h3>
+	<h2>{{$stories->count()}} </h2>Stories
 	<br><br>
 	@foreach ($stories as $story)
 	<ul>
@@ -45,7 +45,7 @@
 
 <div class="col-md-4 col-sm-12">
 	@if ($brands->count() > 0)
-	<h1>{{$brands->count()}}</h1><h3 style="margin-top:-10px;">Brand Stories</h3>
+	<h2>{{$brands->count()}} </h2>Brand Stories
 	<br><br>
 	@foreach ($brands as $brand)
 	<ul>

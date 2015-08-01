@@ -36,6 +36,8 @@ get('logout', 'SessionsController@logout');
 
 get('dashboard', 'DashboardController@index');
 
+get('admin/dashboard', 'SuperAdminController@index');
+
 //get('categories/{category}', 'CategoriesController@index');
 get('categories/{id}', 'CategoriesController@index');
 
