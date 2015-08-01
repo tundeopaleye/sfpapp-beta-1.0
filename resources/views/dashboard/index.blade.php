@@ -11,7 +11,7 @@
 
 <div class="col-md-4 col-sm-12">
 	@if ($stories->count() > 0)
-	h1>{{$stories->count()}}</h1><h3 style="margin-top:-10px;">Stories</h3>
+	<h1>{{$stories->count()}}</h1><h3 style="margin-top:-10px;">Stories</h3>
 	<br><br>
 	@foreach ($stories as $story)
 	<ul>
