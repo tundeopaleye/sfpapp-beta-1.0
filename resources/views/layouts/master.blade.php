@@ -41,6 +41,10 @@
   .imgwidth{
   	height: 15em;
   }
+  
+  .verdana{
+  	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  }
  
 
   
@@ -50,7 +54,7 @@
   
 </head>
 
-<div style="background:#ff8a00; padding:1em; margin-bottom: 1.5em;">
+<div style="background:#63c8f2; padding:1em; margin-bottom: 1.5em;">
 	<div align="right">
 		@if (Auth::check())
 			Welcome, <b>{{ Auth::user()->name }}!</b>
