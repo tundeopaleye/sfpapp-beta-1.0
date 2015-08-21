@@ -1,6 +1,6 @@
 <body>
 	<head>
-		
+		<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="https://sfpapp.s3.amazonaws.com/images/fav.png" type="image/png" sizes="16x16">
 			
 		<meta property="og:title" content="Stories From Pictures" />
@@ -45,6 +45,12 @@
   .verdana{
   	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
   }
+  
+body{ 
+font-family: 'Lekton', sans-serif;	
+
+background-color: #fbfcfc
+} 
  
 
   

@@ -2,10 +2,11 @@ body
 {
 padding-top: 20px;
 background-color: #F7F7F7;
+font-family: 'Lekton', sans-serif;
 }
 .post
 {
-background-color: #FFF;
+background-color: #fbfcfc;
 overflow: hidden;
 box-shadow: 0 0 1px #CCC;
 }
@@ -52,4 +53,4 @@ color: #FFF;
 padding: 10px 15px;
 margin-top: 5px;
 }
-- See more at: http://www.kodeinfo.com/post/facebook-like-system#sthash.NupqgfeI.dpuf
+
