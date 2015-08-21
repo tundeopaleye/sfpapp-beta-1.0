@@ -46,12 +46,19 @@
   	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
   }
   
-body{ 
-font-family: 'Lekton', sans-serif;	
+
+
+@font-face {
+    font-family: Typewriter;
+    src: url(TravelingTypewriter.otf);
+}
+ 
+ 
+ body{ 
+font-family: 'Typewriter', sans-serif;	
 
 background-color: #fbfcfc
 } 
- 
 
   
   </style>
@@ -60,7 +67,7 @@ background-color: #fbfcfc
   
 </head>
 
-<div style="background:#63c8f2; padding:1em; margin-bottom: 1.5em;">
+<div style="background:#eeeeee; padding:1em; margin-bottom: 1.5em;">
 	<div align="right">
 		@if (Auth::check())
 			Welcome, <b>{{ Auth::user()->name }}!</b>

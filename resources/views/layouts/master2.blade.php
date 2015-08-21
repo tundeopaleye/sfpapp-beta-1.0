@@ -15,6 +15,8 @@
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   
         <link href="/assets/styles.css" rel="stylesheet"/>
+        
+        <link href="/assets/stylesheet.css" rel="stylesheet"/>
   
         <link rel="stylesheet" href="/assets/ladda/dist/ladda-themeless.min.css">
         <script src="/assets/ladda/dist/spin.min.js"></script>
@@ -38,11 +40,37 @@
   	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
   }
   
-  body{ 
-font-family: 'Lekton', sans-serif;	
 
-background-color: #fbfcfc;
+ 
+ 
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'traveling__typewriterregular' !important;
+    src: url('travelingtypewriter-webfont.eot') !important;
+    src: url('travelingtypewriter-webfont.eot?#iefix') format('embedded-opentype'),
+         url('travelingtypewriter-webfont.woff2') format('woff2'),
+         url('travelingtypewriter-webfont.woff') format('woff'),
+         url('travelingtypewriter-webfont.ttf') format('truetype'),
+         url('travelingtypewriter-webfont.svg#traveling__typewriterregular') format('svg') !important;
+    font-weight: normal;
+    font-style: normal;
+
+}
+ 
+ body{ 
+
+font-family: 'traveling__typewriterregular' !important;
+							
+background-color: #fbfcfc
 } 
+
+
  
 
   
@@ -55,7 +83,7 @@ background-color: #fbfcfc;
   
 </head>
 
-<div style="background:#63c8f2; padding:1em; margin-bottom: 1.5em;">
+<div style="background:#eeeeee; padding:1em; margin-bottom: 1.5em;">
 	<div align="right">
 		@if (Auth::check())
 			Welcome, <b>{{ Auth::user()->name }}!</b>
