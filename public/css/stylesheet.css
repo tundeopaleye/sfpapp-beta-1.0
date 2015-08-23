@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'traveling__typewriterregular';
+    
+src: url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.eot');
+    
+src: url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.eot?#iefix') format('embedded-opentype'),
+         
+url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.woff2') format('woff2'),
+         
+url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.woff') format('woff'),
+         
+url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.ttf') format('truetype'),
+         
+url('https://sfpapp.s3.amazonaws.com/font/travelingtypewriter-webfont.svg#traveling__typewriterregular') format('svg');
+    
+font-weight: normal;
+    font-style: normal;
+
+ color:#f00;}

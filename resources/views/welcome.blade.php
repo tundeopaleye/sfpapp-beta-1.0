@@ -21,7 +21,7 @@
         <div>
         	<div class="col-md-4 col-sm-12">        		
         		<div class="col-md-12">
-				<h2><span style="color:#ff8a00;">It's Fiction on Fleek!</span></h2>
+				<h2><span style="color:#ff8a00;" class="typewr">It's Fiction on Fleek!</span></h2>
 				<h4><span style=" line-height:1.5em; font-weight:bold;">Just Upload a Picture, Add a Title and tell your Story or Caption it! Brands too can let their Customers tell their story.</span></h4>
 			</div>
         	<!--	<div align="center"><h3>Register/Login</h3></div> -->

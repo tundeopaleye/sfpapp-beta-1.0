@@ -194,3 +194,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'admin'], function()
 	Route::resource('Category', 'CategoryController');
 	Route::resource('user', 'UserController');
 });
+

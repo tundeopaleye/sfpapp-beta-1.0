@@ -30,6 +30,8 @@
         
         <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
 		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+		
+		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 
 <style type="text/css" >
 .col-1-4 {
@@ -48,14 +50,14 @@
   
 
 
-@font-face {
-    font-family: Typewriter;
-    src: url(TravelingTypewriter.otf);
+.elitefont{
+	font-family: 'Special Elite', cursive;
 }
+
  
  
  body{ 
-font-family: 'Typewriter', sans-serif;	
+font-family: 'Special Elite', cursive;
 
 background-color: #fbfcfc
 } 
