@@ -42,7 +42,7 @@ return [
 	'twitter' => [
 	'client_id' => env('TWITTER_CLIENT_ID'),
 	'client_secret' => env('TWITTER_CLIENT_SECRET'),
-	'redirect' => 'http://sfpapp.com/social/login/twitter', //revert to sfpapp.com?
+	'redirect' => 'http://pictolit.com/social/login/twitter', //revert to sfpapp.com?
 	],
 	
 	'facebook' => [
