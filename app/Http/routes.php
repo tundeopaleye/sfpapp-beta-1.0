@@ -77,7 +77,7 @@ Route::resource('stories', 'StoriesController');
 | We define the routes that have to do with captions here
 |
 */
-Route::resource('captions', 'CaptionsController');
+//Route::resource('captions', 'CaptionsController');
 
 /*
  * 

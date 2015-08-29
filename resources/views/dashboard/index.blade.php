@@ -26,7 +26,7 @@
  @endif
 </div>	
 
-<div class="col-md-4 col-sm-12">
+<!--<div class="col-md-6 col-sm-12">
 	@if ($captions->count() > 0)
 	<h1>{{$captions->count()}}</h1><h3 style="margin-top:-10px;">Captions</h3>
 	<br><br>
@@ -42,8 +42,8 @@
  </p>
  @endif
 </div>	
-
-<div class="col-md-4 col-sm-12">
+-->
+<div class="col-md-6 col-sm-12">
 	@if ($brands->count() > 0)
 	<h1>{{$brands->count()}}</h1><h3 style="margin-top:-10px;">Brand Stories</h3>
 	<br><br>

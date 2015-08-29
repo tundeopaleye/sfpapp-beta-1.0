@@ -18,8 +18,8 @@
               <li><a href="/"><b>Home</b></a></li>
               <li><a href="/stories"><b>Stories</b></a></li>
               <li><a href="/stories/create"><b>Create Story</b></a></li>
-               <li><a href="/captions"><b>Captions</b></a></li>
-              <li><a href="/captions/create"><b>Create Caption</b></a></li>
+              <!-- <li><a href="/captions"><b>Captions</b></a></li>
+              <li><a href="/captions/create"><b>Create Caption</b></a></li>-->
                <li><a href="/brands"><b>Brand Stories</b></a></li>
               <li><a href="/brands/create"><b>Create Brand Story</b></a></li>
              

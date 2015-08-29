@@ -17,7 +17,7 @@
 
 				@foreach($row as $caption)	
 				
-				<div id="grid" class="col-md-3 col-sm-6"padding-bottom: 3em;"> 
+				<div id="grid" class="col-md-3 col-sm-12"padding-bottom: 3em;"> 
   				<br><br>
 	            
 	           <h5 style="color: #ff8a00;">Captioned by: {{ $caption->user->name }}</h5>
