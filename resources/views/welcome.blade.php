@@ -107,7 +107,7 @@
 	           <h3 style="color: #ff8a00;">{{$story->title}}</h3>
 	           <h5 style="color: #000;">Told by: {{ $story->user->name }}</h5>
 	            <p><div style="height:12em; overflow: hidden; border:3px solid #eee; "><a href="/stories/{{$story->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
-	            <p style="background-color:#eee; color:#000; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($story->story, $limit = 50, $end = '...') }}</p>
+	            <p style="background-color:#eee; color:#000; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($story->story, $limit = 250, $end = '...') }}</p>
 				<a href="/captions/{{$caption->id}}">See Full Story</a>
 				<br><br>
 				</div>
