@@ -16,7 +16,7 @@
 {!! Form::label('Title') !!}
 {!! Form::text('title', null,
 array('required', 'class'=>'form-control',
-'placeholder'=>'I Love this Brand, I'm Loyal!')) !!}
+'placeholder'=>'I Love this Brand, I am Loyal!')) !!}
 </div>
 
 
