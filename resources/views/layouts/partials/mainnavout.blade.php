@@ -12,7 +12,7 @@
               <span class="icon-bar"></span>
             </button>
            </div>
-          <div id="navbar" class="navbar-collapse collapse">
+          <div id="navbar" class="navbar-collapse collapse newcutoff">
             <ul class="nav navbar-nav">
             	
               <li><a href="/"><b>Home</b></a></li>

@@ -62,7 +62,11 @@ body{
 		background-color: #fbfcfc;
 		font-family: 'Special Elite', cursive;
 } 
-  
+   @media (min-width: 2000px){
+   .collapse {
+       display: none !important;
+   }
+} 
   </style>
   
   
@@ -71,7 +75,7 @@ body{
   <link rel="stylesheet" href="../css/nivo-slider.css" type="text/css" />
 <script src="../js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
  
-  
+
 
 
 </style>

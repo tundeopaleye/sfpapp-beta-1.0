@@ -32,6 +32,14 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
 		
 		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+		
+		  <link rel="stylesheet" type="text/css" href="/css/jquery.atwho.min.css">
+         <!-- Requirements -->
+       
+        <script src="/js/jquery.atwho.min.js"></script>
+        <script src="/js/jquery.caret.min.js"></script>
+        <!-- Laravel Mentions -->
+        @include('mentions::assets')
 
 <style type="text/css" >
 .col-1-4 {
@@ -62,6 +70,12 @@ font-family: 'Special Elite', cursive;
 background-color: #fbfcfc
 } 
 
+
+@media (min-width: 1900px){
+   .collapse {
+       display: none !important;
+   }
+}
   
   </style>
   

@@ -144,6 +144,9 @@ return [
 		'Laracasts\Flash\FlashServiceProvider',
 		'Laravel\Socialite\SocialiteServiceProvider',
 		'GrahamCampbell\Flysystem\FlysystemServiceProvider',
+		 'Busayo\Mention\MentionServiceProvider',
+		 'Collective\Html\HtmlServiceProvider',
+    
 		
 
 		/*
@@ -233,6 +236,10 @@ return [
 		'Flash' => 'Laracasts\Flash\Flash',
 		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 		'Flysystem' => 'GrahamCampbell\Flysystem\Facades\Flysystem',
+		 'users'    => 'App\User',      // responds to /api/mentions/users
+	    'friends'  => 'App\Friend',    // responds to /api/mentions/friends
+	    'clients'  => 'App\Client',    // responds to /api/mentions/clients
+	    'supports' => 'App\Supporter', // responds to /api/mentions/supports
 
 	],
 
