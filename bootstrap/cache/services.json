@@ -31,7 +31,6 @@
         "Laravel\\Socialite\\SocialiteServiceProvider",
         "GrahamCampbell\\Flysystem\\FlysystemServiceProvider",
         "Busayo\\Mention\\MentionServiceProvider",
-        "Collective\\Html\\HtmlServiceProvider",
         "App\\Providers\\AppServiceProvider",
         "App\\Providers\\BusServiceProvider",
         "App\\Providers\\ConfigServiceProvider",
@@ -143,14 +142,12 @@
         "auth.password.tokens": "Illuminate\\Auth\\Passwords\\PasswordResetServiceProvider",
         "translator": "Illuminate\\Translation\\TranslationServiceProvider",
         "translation.loader": "Illuminate\\Translation\\TranslationServiceProvider",
-        "html": "Collective\\Html\\HtmlServiceProvider",
-        "form": "Collective\\Html\\HtmlServiceProvider",
+        "html": "Illuminate\\Html\\HtmlServiceProvider",
+        "form": "Illuminate\\Html\\HtmlServiceProvider",
         "Illuminate\\Broadcasting\\BroadcastManager": "Illuminate\\Broadcasting\\BroadcastServiceProvider",
         "Illuminate\\Contracts\\Broadcasting\\Factory": "Illuminate\\Broadcasting\\BroadcastServiceProvider",
         "Illuminate\\Contracts\\Broadcasting\\Broadcaster": "Illuminate\\Broadcasting\\BroadcastServiceProvider",
-        "Laravel\\Socialite\\Contracts\\Factory": "Laravel\\Socialite\\SocialiteServiceProvider",
-        "Collective\\Html\\HtmlBuilder": "Collective\\Html\\HtmlServiceProvider",
-        "Collective\\Html\\FormBuilder": "Collective\\Html\\HtmlServiceProvider"
+        "Laravel\\Socialite\\Contracts\\Factory": "Laravel\\Socialite\\SocialiteServiceProvider"
     },
     "when": {
         "Illuminate\\Foundation\\Providers\\ArtisanServiceProvider": [],
@@ -166,7 +163,6 @@
         "Illuminate\\Translation\\TranslationServiceProvider": [],
         "Illuminate\\Html\\HtmlServiceProvider": [],
         "Illuminate\\Broadcasting\\BroadcastServiceProvider": [],
-        "Laravel\\Socialite\\SocialiteServiceProvider": [],
-        "Collective\\Html\\HtmlServiceProvider": []
+        "Laravel\\Socialite\\SocialiteServiceProvider": []
     }
 }

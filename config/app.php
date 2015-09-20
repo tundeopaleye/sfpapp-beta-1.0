@@ -145,7 +145,7 @@ return [
 		'Laravel\Socialite\SocialiteServiceProvider',
 		'GrahamCampbell\Flysystem\FlysystemServiceProvider',
 		 'Busayo\Mention\MentionServiceProvider',
-	//	 'Collective\Html\HtmlServiceProvider',
+		 'Collective\Html\HtmlServiceProvider',
     
 		
 
