@@ -42,7 +42,7 @@ array('multiple'=>'multiple','name'=>'categories[]')) !!}
 
 <div>
 	Tags<br>
-	{!! mention()->asText('recipient', old('recipient'), 'users', 'name') !!}
+<!--	{!! mention()->asText('recipient', old('recipient'), 'users', 'name') !!} -->
 </div>
 
 <div class="form-group">
