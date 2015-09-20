@@ -48,7 +48,7 @@ padding: 10px 15px;
 margin-top: 5px;
 }
 
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 1000px) and (max-width: 1050px) {
    .collapse {
        display: none !important;
    }
