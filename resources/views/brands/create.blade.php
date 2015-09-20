@@ -16,7 +16,7 @@
 {!! Form::label('Title') !!}
 {!! Form::text('title', null,
 array('required', 'class'=>'form-control',
-'placeholder'=>'San Juan Vacation')) !!}
+'placeholder'=>'I Love this Brand, I'm Loyal!')) !!}
 </div>
 
 
