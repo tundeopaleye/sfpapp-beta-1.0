@@ -27,16 +27,17 @@ array('required', 'class'=>'form-control',
 {!! Form::file('thumbnail') !!}
 </div>
 
+<!--
 <div class="form-group">
 {!! Form::label('Brand') !!}
 {!! Form::textarea('brand', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Brand Narratives')) !!}
 </div>
-
+-->
 <div class="form-group" class="form-group">
-	Brand Story with Mentions<br>
-	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control', array('placeholder=>'Brand Narratives')) !!} <!---->
+	Brand Story<br>
+	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 
 <div class="form-group" class="form-group" style="width:100%;">

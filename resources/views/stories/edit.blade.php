@@ -32,13 +32,18 @@ array('required', 'class'=>'form-control',
 <!--<div class="form-group">
 {!! Form::label('thumbnail', 'Picture') !!}
 {!! Form::file('thumbnail') !!}
-</div>-->
-
+</div>
+For Mentions
 <div class="form-group">
 {!! Form::label('Story') !!}
 {!! Form::textarea('story', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Story, story? Story! Once upon a time...')) !!}
+</div>
+-->
+<div class="form-group" class="form-group">
+	Story<br>
+	{!! mention()->asTextArea('story', old('story'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 
 <div class="form-group">

@@ -32,15 +32,19 @@ array('required', 'class'=>'form-control',
 <!--<div class="form-group">
 {!! Form::label('thumbnail', 'Picture') !!}
 {!! Form::file('thumbnail') !!}
-</div>-->
-
+</div>
+For Mentions
 <div class="form-group">
 {!! Form::label('Brand') !!}
 {!! Form::textarea('brand', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Things to do before leaving for vacation')) !!}
 </div>
-
+-->
+<div class="form-group" class="form-group">
+	Brand Story<br>
+	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control') !!} <!---->
+</div>
 
 <div>
 {!! Form::label('Categories') !!}
@@ -49,10 +53,7 @@ array('multiple'=>'multiple','name'=>'categories[]')) !!}
 
 </div>
 
-<div>
-	Mentions<br>
-	{!! mention()->asText('recipient', old('recipient'), 'users', 'name', 'form-control') !!} <!---->
-</div>
+
 
 
 <div class="form-group">
