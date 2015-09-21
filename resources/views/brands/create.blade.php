@@ -37,7 +37,7 @@ array('required', 'class'=>'form-control',
 <div class="form-group" width="100%">
 {!! Form::label('Categories') !!}
 {!! Form::select('categories', $categories, null,
-array('multiple'=>'multiple','name'=>'categories[]'), 'class'=>'form-control') !!}
+array('multiple'=>'multiple','name'=>'categories[]')) !!}
 </div>
 
 <div>
