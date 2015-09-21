@@ -34,7 +34,7 @@ array('required', 'class'=>'form-control',
 'placeholder'=>'Brand Narratives')) !!}
 </div>
 
-<div class="form-group" width="100%">
+<div class="form-group" class="form-group">
 {!! Form::label('Categories') !!}
 {!! Form::select('categories', $categories, null,
 array('multiple'=>'multiple','name'=>'categories[]')) !!}
