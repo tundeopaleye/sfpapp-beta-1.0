@@ -34,16 +34,17 @@ array('required', 'class'=>'form-control',
 'placeholder'=>'Brand Narratives')) !!}
 </div>
 
+<div class="form-group" class="form-group">
+	Brand Story with Mentions<br>
+	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control') !!} <!---->
+</div>
+
 <div class="form-group" class="form-group" style="width:100%;">
 {!! Form::label('Categories') !!}
 {!! Form::select('categories', $categories, null,
 array('multiple'=>'multiple','name'=>'categories[]')) !!}
 </div>
 
-<div>
-	Mentions<br>
-	{!! mention()->asText('recipient', old('recipient'), 'users', 'name', 'form-control') !!} <!---->
-</div>
 
 <div class="form-group">
 {!! Form::submit('Create Brand Story', array('class'=>'btn btn-primary')) !!}
