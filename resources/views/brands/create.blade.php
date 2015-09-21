@@ -37,12 +37,12 @@ array('required', 'class'=>'form-control',
 <div class="form-group" width="100%">
 {!! Form::label('Categories') !!}
 {!! Form::select('categories', $categories, null,
-array('multiple'=>'multiple','name'=>'categories[]')) !!}
+array('multiple'=>'multiple','name'=>'categories[]'), 'class'=>'form-control') !!}
 </div>
 
 <div>
 	Tags<br>
-	{!! mention()->asText('recipient', old('recipient'), 'users', 'name') !!} <!---->
+	{!! mention()->asText('recipient', old('recipient'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 
 <div class="form-group">

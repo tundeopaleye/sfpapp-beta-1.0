@@ -33,9 +33,9 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
 		
-		  <link rel="stylesheet" type="text/css" href="/css/jquery.atwho.min.css">
+	 <link rel="stylesheet" type="text/css" href="/css/jquery.atwho.min.css">
          <!-- Requirements -->
-       
+        
         <script src="/js/jquery.atwho.min.js"></script>
         <script src="/js/jquery.caret.min.js"></script>
         <!-- Laravel Mentions -->
