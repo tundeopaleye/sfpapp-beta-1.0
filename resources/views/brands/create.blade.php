@@ -36,7 +36,7 @@ array('required', 'class'=>'form-control',
 
 <div class="form-group" class="form-group">
 	Brand Story with Mentions<br>
-	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control', 'Brand Narratives') !!} <!---->
+	{!! mention()->asTextArea('brand', old('brand'), 'users', 'name', 'form-control', array('placeholder=>'Brand Narratives')) !!} <!---->
 </div>
 
 <div class="form-group" class="form-group" style="width:100%;">
