@@ -49,6 +49,11 @@ array('multiple'=>'multiple','name'=>'categories[]')) !!}
 
 </div>
 
+<div>
+	Tags<br>
+	{!! mention()->asText('recipient', old('recipient'), 'users', 'name', 'form-control') !!} <!---->
+</div>
+
 
 <div class="form-group">
 {!! Form::submit('Update Brand', array('class'=>'btn btn-primary')) !!}
