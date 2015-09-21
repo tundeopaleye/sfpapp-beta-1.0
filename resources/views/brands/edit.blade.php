@@ -50,7 +50,7 @@ array('multiple'=>'multiple','name'=>'categories[]')) !!}
 </div>
 
 <div>
-	Tags<br>
+	Mentions<br>
 	{!! mention()->asText('recipient', old('recipient'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 
