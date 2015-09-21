@@ -146,6 +146,7 @@ return [
 		'GrahamCampbell\Flysystem\FlysystemServiceProvider',
 		 'Busayo\Mention\MentionServiceProvider',
 	//	 'Collective\Html\HtmlServiceProvider',
+		'Collective\Html\HtmlServiceProvider',
     
 		
 
@@ -206,7 +207,9 @@ return [
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
 		'HTML' => 'Collective\Html\HtmlFacade',
-		'Form' => 'Illuminiate\Html\FormFacade',
+		//'Form' => 'Illuminiate\Html\FormFacade',
+		'Form' => 'Collective\Html\FormFacade',
+      	'Html' => 'Collective\Html\HtmlFacade',
 		'Accordion' => 'Bootstrapper\Facades\Accordion',
 		'Alert' => 'Bootstrapper\Facades\Alert',
 		'Badge' => 'Bootstrapper\Facades\Badge',
