@@ -143,7 +143,7 @@
 <!--{!! Form::textarea('body', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Retell your own story here')) !!}
-</div>
+
 -->
 <div class="form-group">
 	Retell the Story (mentions)<br>
@@ -196,7 +196,7 @@ array('required', 'class'=>'form-control',
 	
 	
 </div>
-
+</div>
 
 <div><hr /></div>
 
