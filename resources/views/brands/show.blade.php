@@ -132,7 +132,7 @@ array('required', 'class'=>'form-control',
 </div>
 <div class="form-group" class="form-group">
 	Retell the Story (mentions)<br>
-	{!! mention()->asTextArea('body', 'body', 'users', 'name', 'form-control') !!} <!---->
+	{!! mention()->asTextArea('body', old('body'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 <div class="form-group">
 {!! Form::submit('Post Retell', array('class'=>'btn btn-primary')) !!}
