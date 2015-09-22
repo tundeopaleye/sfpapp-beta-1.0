@@ -43,7 +43,7 @@ array('required', 'class'=>'form-control',
 -->
 <div class="form-group" class="form-group">
 	Story<br>
-	{!! mention()->asTextArea('story', old('story'), 'users', 'name', 'form-control') !!} <!---->
+	{!! mention()->asTextArea('story', $story->story, 'users', 'name', 'form-control') !!} <!---->
 </div>
 
 <div class="form-group">

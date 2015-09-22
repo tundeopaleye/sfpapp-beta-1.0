@@ -130,6 +130,10 @@
 array('required', 'class'=>'form-control',
 'placeholder'=>'Retell your own story here')) !!}
 </div>
+<div class="form-group" class="form-group">
+	Retell the Story (mentions)<br>
+	{!! mention()->asTextArea('body', $repostable->body, 'users', 'name', 'form-control') !!} <!---->
+</div>
 <div class="form-group">
 {!! Form::submit('Post Retell', array('class'=>'btn btn-primary')) !!}
 </div>
