@@ -140,9 +140,14 @@
 {!! Form::hidden('repostable_type1', 'story') !!}
 <div class="form-group">
 {!! Form::hidden('repostable_id', $story->id) !!}	
-{!! Form::textarea('body', null,
+<!--{!! Form::textarea('body', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Retell your own story here')) !!}
+</div>
+-->
+<div class="form-group">
+	Retell the Story (mentions)<br>
+	{!! mention()->asTextArea('body', old('body'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 <div class="form-group">
 {!! Form::submit('Post Retell', array('class'=>'btn btn-primary')) !!}

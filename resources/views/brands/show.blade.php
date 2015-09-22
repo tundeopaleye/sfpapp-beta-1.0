@@ -124,14 +124,19 @@
 @else
 {!! Form::open(array('route' => 'reposts.store', null, 'class' => 'form')) !!}
 {!! Form::hidden('repostable_type1', 'brand') !!}
-<div class="form-group">
+
+
+
 {!! Form::hidden('repostable_id', $brand->id) !!}	
-{!! Form::textarea('body', null,
+<!--<div class="form-group">
+	{!! Form::textarea('body', null,
 array('required', 'class'=>'form-control',
 'placeholder'=>'Retell your own story here')) !!}
 </div>
-<div class="form-group" class="form-group">
-	Retell the Story (mentions)<br>
+-->
+
+<div class="form-group">
+	Retell the Brand Story (mentions)<br>
 	{!! mention()->asTextArea('body', old('body'), 'users', 'name', 'form-control') !!} <!---->
 </div>
 <div class="form-group">
