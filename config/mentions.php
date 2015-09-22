@@ -2,6 +2,6 @@
 
 return [
 
-    'users' => '<a href="#">'.'App\User'.'</a>',
+    'users' => 'App\User',
 
 ];
