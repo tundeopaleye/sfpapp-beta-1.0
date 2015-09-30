@@ -58,7 +58,7 @@ return [
 	*/
 
 	//'from' => ['address' => env('MAIL_USERNAME'), 'name' => 'SFP'],
-	'from' => ['address' => 'mails@sfpapp.com', 'name' => 'SFP'],
+	'from' => ['address' => 'info@pictolitmails.com', 'name' => 'Pictolit'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
 
 	//'username' => "olatundeopaleye@gmail.com",
 	//'username' => env('MAIL_USERNAME'),
-	'username' => "mails@sfpapp.com",
+	'username' => "info@pictolitmails.com",
 
 	/*
 	|--------------------------------------------------------------------------
@@ -101,7 +101,7 @@ return [
 
 	//'password' => "ednuttee",
 	//'password' => env('MAIL_PASSWORD'),
-	'password' => "GSo_8zWh9CFZXzdGL33ZKA",
+	'password' => "MNri8RjEXwuuudwbmD5pjBnfTR5FHxZP",
 
 	/*
 	|--------------------------------------------------------------------------
