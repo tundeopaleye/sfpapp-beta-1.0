@@ -14,6 +14,8 @@ class AppMailer {
 	
 	protected $to;
 	
+	protected $subject;
+	
 	protected $view;
 	
 	protected $data = [];
@@ -38,7 +40,8 @@ class AppMailer {
 	{
 		$this->mailer->send($this->view, $this->data, function($message) {
 			$message->from($this->from, 'Pictolit Admin')
-					->to($this->to);
+					->to($this->to)
+					->subject($this->subject, 'Verify your Account');
 		});
 		
 	}
