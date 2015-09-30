@@ -10,7 +10,7 @@ class AppMailer {
 		
 	protected $mailer;	
 	
-	protected $from = 'admin@sfpapp.com';
+	protected $from = 'info@pictolitmails.com';
 	
 	protected $to;
 	
@@ -37,7 +37,7 @@ class AppMailer {
 	public function deliver()
 	{
 		$this->mailer->send($this->view, $this->data, function($message) {
-			$message->from($this->from, 'SFP Admin')
+			$message->from($this->from, 'Pictolit Admin')
 					->to($this->to);
 		});
 		
