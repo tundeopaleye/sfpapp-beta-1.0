@@ -101,7 +101,7 @@ return [
 
 	//'password' => "ednuttee",
 	//'password' => env('MAIL_PASSWORD'),
-	'password' => "MNri8RjEXwuuudwbmD5pjBnfTR5FHxZP",
+	'password' => "5b61PWb_dLE4HMjBW2G73g",
 
 	/*
 	|--------------------------------------------------------------------------
