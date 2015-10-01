@@ -66,7 +66,7 @@
 			</div>
 		</div>
 	</nav>
-<div align="center"><a href="/">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit4p.png",'', array('width'=>'auto','height'=>'auto')) !!}</a></div>
+<div align="center" style="margin-bottom:20px;"><a href="/">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit4p.png",'', array('width'=>'auto','height'=>'auto')) !!}</a></div>
 	
 	@yield('content')
 
