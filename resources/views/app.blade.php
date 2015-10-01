@@ -44,7 +44,7 @@
 				
 			</div>
 			
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #f57f20;>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color: #efefef;>
 				<ul class="nav navbar-nav">
 					
 				</ul>
@@ -66,7 +66,8 @@
 			</div>
 		</div>
 	</nav>
-<div align="center" style="margin-bottom:1em;">{!!HTML::image("images/logo1.png",'', array('width'=>'auto','height'=>'auto')) !!}</div>
+<div align="center"><a href="/">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/pictolit4p.png",'', array('width'=>'auto','height'=>'auto')) !!}</a></div>
+	
 	@yield('content')
 
 	<!-- Scripts -->
