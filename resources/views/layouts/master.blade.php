@@ -3,8 +3,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Lekton' rel='stylesheet' type='text/css'>
 		<link rel="icon" href="https://sfpapp.s3.amazonaws.com/images/fav.png" type="image/png" sizes="16x16">
 			
-		<meta property="og:title" content="Stories From Pictures" />
-		<meta property="og:description" content="Stories From Pictures" />
+		<meta property="og:title" content="Pictolit" />
+		<meta property="og:description" content="Pictolit" />
 		<!--<meta property="og:image" content="thumbnail_image" />-->
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

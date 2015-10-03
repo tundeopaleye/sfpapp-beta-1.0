@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-<title>Story - Stories from Pictures</title>
+<title>Story - Pictolit</title>
 
 <script>
 
