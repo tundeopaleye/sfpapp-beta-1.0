@@ -112,16 +112,7 @@
 				<br><br>
 				</div>
 	            
-	            <!--
-	            <div align="center"><h3>Featured Caption</h3></div>
-				<div id="grid" class="col-md-12 col-sm-12"> 				
-				
-				<h5 style="color: #000;">Captioned by: {{ $caption->user->name }}</h5>
-				<p><div style="height:6em; overflow: hidden; border:3px solid #000; "><a href="/captions/{{$caption->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$caption->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
-				<p style="background-color:#000; color:#fff; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($caption->caption, $limit = 50, $end = '...') }}</p>
-				<a href="/captions/{{$caption->id}}">See Full Caption</a>
-				</div>	       
--->
+	            
 
 
 
