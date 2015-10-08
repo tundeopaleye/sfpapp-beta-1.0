@@ -137,9 +137,8 @@
         	
         </div>
         
-</div>
-    <div class="col-md-12" style="background-color: #000; color: #fff; padding:1em; font-size: 10px; margin-top:1em;" align="center">
-	&copy; 2015 Pictolit - All Rights Reserved </div>
+
+    
     <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="../js/jquery.nivo.slider.js"></script>
     <script type="text/javascript">
