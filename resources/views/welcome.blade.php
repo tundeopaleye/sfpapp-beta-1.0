@@ -133,7 +133,10 @@
         		
         		</div>
         	
-        	
+        	<div class="col-md-12" style="background-color: #000; color: #fff; padding:1em; font-size: 10px; margin-top:1em;" align="center">
+	&copy; 2015 Pictolit - All Rights Reserved 
+
+</div>
         	
         </div>
         
