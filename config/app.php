@@ -147,6 +147,7 @@ return [
 		 'Busayo\Mention\MentionServiceProvider',
 	//	 'Collective\Html\HtmlServiceProvider',
 		'Collective\Html\HtmlServiceProvider',
+		'Krucas\Notification\NotificationServiceProvider',
     
 		
 
@@ -239,10 +240,11 @@ return [
 		'Flash' => 'Laracasts\Flash\Flash',
 		'Socialite' => 'Laravel\Socialite\Facades\Socialite',
 		'Flysystem' => 'GrahamCampbell\Flysystem\Facades\Flysystem',
-		 'users'    => 'App\User',      // responds to /api/mentions/users
-	    'friends'  => 'App\Friend',    // responds to /api/mentions/friends
-	    'clients'  => 'App\Client',    // responds to /api/mentions/clients
-	    'supports' => 'App\Supporter', // responds to /api/mentions/supports
+		// 'users'    => 'App\User',      // responds to /api/mentions/users
+	   // 'friends'  => 'App\Friend',    // responds to /api/mentions/friends
+	   // 'clients'  => 'App\Client',    // responds to /api/mentions/clients
+	   // 'supports' => 'App\Supporter', // responds to /api/mentions/supports
+	    'Notification' => 'Krucas\Notification\Facades\Notification',
 
 	],
 

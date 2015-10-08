@@ -18,7 +18,8 @@
 		"guzzlehttp/guzzle": "~5.0",
 		"league/flysystem-aws-s3-v3": "~1.0",
 		"graham-campbell/flysystem": "~3.1",	
-    	"busayo/laravel-mentions": "1.0.*"
+    	"busayo/laravel-mentions": "1.0.*",
+    	"edvinaskrucas/notification": "5.*"
 
 		
 		
