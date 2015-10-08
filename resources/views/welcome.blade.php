@@ -20,10 +20,10 @@
         
         <div>
         	<div class="col-md-4 col-sm-12">        		
-        		<div class="col-sm-12">
+        	<!--	<div class="col-sm-12"> </div>-->
 				<h3><span style="color:#ff8a00;" >It's Fiction on Fleek!</span></h3>
 				<h4><span style=" line-height:1.5em; font-weight:bold;">Just Upload a Picture, Add a Title and tell your Story or Caption it! Brands too can let their Customers tell their story.</span></h4>
-			</div>
+			
         	<!--	<div align="center"><h3>Register/Login</h3></div> -->
         		<div>
         			<div class="container-fluid">
@@ -98,11 +98,11 @@
 </div>
         		</div>
         		</div>
-        	
+        	</div>
         	<div class="col-md-4 col-sm-12">
         		<div align="center"><h3>Featured Story</h3></div>
         		
-<div id="grid" class="col-md-12 col-sm-12"> 
+<!--	<div id="grid" class="col-md-12 col-sm-12"> -->
   			
 	           <h3 style="color: #ff8a00;">{{$story->title}}</h3>
 	           <h5 style="color: #000;">Told by: {{ $story->user->name }}</h5>
@@ -110,7 +110,7 @@
 	            <p style="background-color:#eee; color:#000; font-weight: bold; padding:1em; margin-top:-0.7em; font-size: 1em;">{{ str_limit($story->story, $limit = 250, $end = '...') }}</p>
 				<a href="/captions/{{$caption->id}}">See Full Story</a>
 				<br><br>
-				</div>
+				<!-- </div> -->
 	            
 	            
 
