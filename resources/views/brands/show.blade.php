@@ -171,7 +171,7 @@ array('required', 'class'=>'form-control',
 
 <h3 style="color: #f57f20;">	Re:{{ $brand->title }} by {{ $repost->user->name }}</h3><!-- Temporarily dealing with user ID instead of name -->
 <p>
-	{!! $repost->body !!}
+	{!! preg_replace('/(^|\s)@([a-z0-9_]+)/i', '$1<a href="http://www.pictolit.com/users/$2">@$2</a>', $repost->body)  !!}
 </p>
 
 @endforeach

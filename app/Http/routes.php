@@ -113,7 +113,9 @@ Route::resource('comments', 'CommentsController');
 | We define the routes that have to do with reposts here
 |
 */
-Route::resource('reposts', 'RepostsController');
+//Route::resource('reposts', 'RepostsController');
+
+get('reposts/{id}', 'RepostsController@show');
 
 //Route::get('stories/{$id}', 'RepostsController@store');
 

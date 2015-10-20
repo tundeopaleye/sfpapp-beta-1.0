@@ -161,13 +161,7 @@ class BrandsController extends Controller {
 		$user = User::find($brand->user_id);
 		$brand->brand = nl2br($brand->brand);
 		
-		
 		return view('brands.show')->with('brand', $brand)->with('user', $user);
-		
-		
-		
-		
-	
 	}
 
 	/**

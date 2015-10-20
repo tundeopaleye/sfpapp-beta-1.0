@@ -16,6 +16,10 @@ use App\User;
 
 use App\Repost;
 
+use App\Brand;
+
+use App\Caption;
+
 use Input;
 
 
@@ -119,8 +123,18 @@ class RepostsController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
-	}
+		
+		$repost = Repost::find($id);
+		$user = User::find($repost->user_id);
+		$repost->body = nl2br($repost->body);		
+		
+		return view('reposts.show')->with('repost', $repost)->with('user', $user); //body or repost?
+		
+		
+		
+		
+	
+	}}
 
 	/**
 	 * Show the form for editing the specified resource.

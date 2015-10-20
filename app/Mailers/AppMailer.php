@@ -41,7 +41,7 @@ class AppMailer {
 		$this->mailer->send($this->view, $this->data, function($message) {
 			$message->from($this->from, 'Pictolit Admin')
 					->to($this->to)
-					->subject($this->subject, 'Verify your Account');
+					->subject('Verify your Account');
 		});
 		
 	}
