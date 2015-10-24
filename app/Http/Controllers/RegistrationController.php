@@ -74,7 +74,7 @@ class RegistrationController extends Controller {
 		
 		//validate the request
 		$this->validate($request, [
-			'name' => 'required | unique:users',
+			'name' => 'required | alpha_num | max:255 | unique:users',
 			'email' => 'required | email | unique:users',
 			'password' => 'required'
 		]);/**/

@@ -31,7 +31,7 @@
 						<input type="hidden" name="_token" value="{{{ csrf_token() }}}" />
 						<div class="form-group">
 							<label class="col-md-4 control-label">Userame</label>
-							<h7>must be only alphanumeric (without spaces)</h7>
+							<br><h7>must be only alphanumeric (without spaces)</h7>
 							<div class="col-md-6">
 								<input type="text" class="form-control" name="name" value="{{ old('name') }}">
 							</div>
