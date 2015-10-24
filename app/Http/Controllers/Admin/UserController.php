@@ -35,17 +35,31 @@ class UserController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index($id)
+	public function indexname($name)
 	{
 		
-		$user = User::find($id);
-	   
-		$brands = $user->brands;
+		$user = User::find($name);
+	   $brands = $user->brands;
 		$stories = $user->stories;
+		
+		
 		
         return view('users.index')->with('brands', $brands)->with('stories', Story::orderBy('id','DESC')->paginate(12))->with('user', $user);			
 		
 	}
+	
+	
+	public function index($id_or_name)
+    {
+        $user = User::where('id' , '=', $id_or_name)->orWhere('name', $id_or_name)->firstOrFail();
+		$brands = $user->brands;
+		$stories = $user->stories;
+         return view('users.index')->with('brands', $brands)->with('stories', Story::orderBy('id','DESC')->paginate(12))->with('user', $user);			
+		
+    }
+	
+	
+	
 
 	/**
 	 * Show the form for creating a new resource.

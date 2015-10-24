@@ -72,6 +72,8 @@ get('users', 'StoriesController@userindex');
 
 get('users/{id}', 'Admin\UserController@index');
 
+get('user/{name}', 'Admin\UserController@indexuser');
+
 
 /*
 |--------------------------------------------------------------------------
