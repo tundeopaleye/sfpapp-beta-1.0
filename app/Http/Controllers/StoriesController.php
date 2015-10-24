@@ -65,6 +65,16 @@ class StoriesController extends Controller {
 			
           
 	}
+	
+	public function userindex()
+	{
+		
+        $categories = Category::lists('name','id');    
+		//return view('stories.index')->with('stories', Story::orderBy('id','DESC')->paginate(12)); //Temporary paginate 12 - former to revert
+		//$stories = Story::all()->where('user_id', Auth::user()->id); 	
+		return view('users.index')->with('stories', Story::orderBy('id','DESC')->where('user_id', Auth::user()->id)->paginate(12)); //Temporary paginate 12
+		
+		}
 
 	/**
 	 * Show the form for creating a new resource.

@@ -68,6 +68,8 @@ Route::post('contact', ['as' => 'contact_store', 'uses' => 'AboutController@stor
 
 Route::resource('stories', 'StoriesController');
 
+get('users', 'StoriesController@userindex');
+
 
 /*
 |--------------------------------------------------------------------------
