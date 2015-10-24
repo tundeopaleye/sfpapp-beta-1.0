@@ -28,7 +28,7 @@
 
 <div class="form-group">
 <h1>Story: <b>{{ $story->title }}</b></h1>
-<h5 style="color: #f57f20;">Written by: <b>{{ $story->user->name }}</b></h5> <!--Isn't this auth for the current authenticated user? -->
+<h5 style="color: #f57f20;">Written by: <b><a href="/users/{{ $story->user->name }}">{{ $story->user->name }}</a></b></h5> <!--Isn't this auth for the current authenticated user? -->
 </div>
 
 <div class="form-group">
