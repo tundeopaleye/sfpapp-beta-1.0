@@ -157,6 +157,9 @@ class StoriesController extends Controller {
 			}
 	
 	\Session::flash('flash_message', 'Your story has been created!');
+	
+	
+	// Send a mail to those whose usernames appear in the mentions
 
 	
 	return redirect('stories/'.$story->id.'/edit');

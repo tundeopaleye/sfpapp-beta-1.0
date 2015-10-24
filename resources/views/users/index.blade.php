@@ -10,7 +10,7 @@
 
 	<title>Users - Pictlit</title>
 
-<h1>User: {{$user->name}}</h1>
+<h1>{{$user->name}}</h1>
 <br>
 
 	<h4>Stories</h4>
@@ -28,7 +28,7 @@
 				<div id="grid" class="col-md-3 col-sm-6"padding-bottom: 3em;"> 
   				<br><br>
 	            <p class="orange"><h3>{{ $story->title }}</h3></p>
-	            <h5 style="color: #ff8a00;">Written by: {{ $story->user->name }}<b></b></h5>
+	            <h5 style="color: #ff8a00;">Written by: <a href="/users/{{ $story->user->name }}">{{ $story->user->name }}</a><b></b></h5>
 	            <p><div style="height:10em; overflow: hidden; border:3px solid #ff8a00; "><a href="/stories/{{$story->id}}">{!!HTML::image("https://sfpapp.s3.amazonaws.com/thumbnails/$story->thumbnail",'', array('width'=>'100%','height'=>'auto')) !!}</a></div></p>
 	            <p>{{ str_limit($story->story, $limit = 250, $end = '...') }}</p>
 	
