@@ -35,10 +35,16 @@ class UserController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($id)
 	{
-		$users = User::orderBy('created_at', 'desc')->get();
-		return view('admin.user.index')->with('users', $users);
+		
+		$user = User::find($id);
+	   
+		$brands = $user->brands;
+		$stories = $user->stories;
+		
+        return view('users.index')->with('brands', $brands)->with('stories', Story::orderBy('id','DESC')->paginate(12))->with('user', $user);			
+		
 	}
 
 	/**

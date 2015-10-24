@@ -70,6 +70,8 @@ Route::resource('stories', 'StoriesController');
 
 get('users', 'StoriesController@userindex');
 
+get('users/{id}', 'Admin\UserController@index');
+
 
 /*
 |--------------------------------------------------------------------------

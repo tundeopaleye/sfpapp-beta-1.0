@@ -6,6 +6,15 @@
 
 <title>Stories - Pictolit</title>
 	
+	<div class="row clearfix">
+
+	<title>Users - Pictlit</title>
+
+<h1>User: {{$user->name}}</h1>
+<br>
+<div class="col-md-4 col-sm-12">
+	<h4>Stories</h4>
+	@if($user->stories->count() > 0)
 	
 	
 	
@@ -31,10 +40,17 @@
 	        @endforeach
 
 	</div>
+	
+	test working
 
 @endforeach
 	        
-	        {!! $stories->render() !!}
+	        
+	       
+	@else
+	There are no stories for this user yet
+	@endif
+</div>	
 			</div><!-- /.row -->
 			
  @stop
