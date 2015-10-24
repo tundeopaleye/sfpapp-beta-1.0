@@ -12,10 +12,9 @@
 
 <h1>User: {{$user->name}}</h1>
 <br>
-<div class="col-md-4 col-sm-12">
+
 	<h4>Stories</h4>
 	@if($user->stories->count() > 0)
-	
 	
 	
 	<div class="row clearfix">
