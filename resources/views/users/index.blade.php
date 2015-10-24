@@ -20,7 +20,7 @@
 	
 	<div class="row clearfix">
 
-				@foreach(array_chunk($$user->stories->all(), 4) as $row)
+				@foreach(array_chunk($user->stories->all(), 4) as $row)
 
 				<div class="row">
 
