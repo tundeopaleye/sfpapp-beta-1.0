@@ -196,7 +196,7 @@ array('required', 'class'=>'form-control',
 	
 	
 </div>
-</div>
+
 
 <div><hr /></div>
 
