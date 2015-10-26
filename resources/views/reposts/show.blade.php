@@ -41,11 +41,6 @@
 
 </div>
 
-@foreach ($story->reposts as $repost)
-<h3 style="color: #f57f20;">	Re:{{ $story->title }} by {{ $repost->user->name }}</h3><!-- Temporarily dealing with user ID instead of name -->
-@endforeach
-
-
 
 <!-- Like button ends -->
 
