@@ -125,12 +125,12 @@ class RepostsController extends Controller {
 	{
 		
 		$repost = Repost::find($id);
-		$story = Story::find($id);
-		$brand = Brand::find($id);
+		$story = Story::find($repost->repostable_id);
+		$brand = Brand::find($repost->repostable_id);
 		$user = User::find($repost->user_id);
 		$repost->body = nl2br($repost->body);		
 		
-		return view('reposts.show')->with('repost', $repost)->with('user', $user)->with('story', $story); //body or repost?
+		return view('reposts.show')->with('repost', $repost)->with('user', $user)->with('story', $story)->with('brand', $brand); //body or repost?
 		
 		
 		
