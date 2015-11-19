@@ -163,7 +163,7 @@ class StoriesController extends Controller {
 	// Send a mail to those whose usernames appear in the mentions
 	
 	//$user = User::create($request->all()); // temporary test for email sending
-
+		$user = User::all();
         $mailer->sendEmailMentionNotificationTo(Auth::user()); // temporary test for email sending
 
 	
