@@ -164,7 +164,7 @@ class StoriesController extends Controller {
 	
 	//$user = User::create($request->all()); // temporary test for email sending
 
-        $mailer->sendEmailMentionNotificationTo($user); // temporary test for email sending
+        $mailer->sendEmailMentionNotificationTo(Auth::user()); // temporary test for email sending
 
 	
 	return redirect('stories/'.$story->id.'/edit');
