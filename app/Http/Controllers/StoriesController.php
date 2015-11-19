@@ -32,6 +32,7 @@ use Imagine\Image\ImageInterface;
 use Illuminate\Contracts\Filesystem\Filesystem;
 use GrahamCampbell\Flysystem\Facades\Flysystem;
 use Storage;
+use App\Mailers\AppMailer;
 
 //use \League\Flysystem\Filesystem;
 
