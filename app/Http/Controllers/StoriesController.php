@@ -99,7 +99,7 @@ class StoriesController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(StoryFormRequest $request)
+	public function store(StoryFormRequest $request, AppMailer $mailer)
 	{
 		//
 		if (Input::hasFile('thumbnail'))
