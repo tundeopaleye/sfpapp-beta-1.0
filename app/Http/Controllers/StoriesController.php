@@ -93,15 +93,20 @@ class StoriesController extends Controller {
 		
 		
 	}
-
+	
+	
+	
+	
+	
+	
 	/**
 	 * Store a newly created resource in storage.
 	 *
 	 * @return Response
 	 */
-	public function store(StoryFormRequest $request)
+	
+	public function store(StoryFormRequest $request, AppMailer $mailer)
 	{
-		//
 		if (Input::hasFile('thumbnail'))
 			{
 			$image = Image::make(Input::file('thumbnail')->getRealPath());	
@@ -164,13 +169,12 @@ class StoriesController extends Controller {
 	
 	//$user = User::create($request->all()); // temporary test for email sending
 		$user = User::all();
-        $mailer->sendEmailMentionNotificationTo(Auth::user()); // temporary test for email sending
+        $mailer->sendEmailMentionNotificationTo($user); // temporary test for email sending
 
 	
 	return redirect('stories/'.$story->id.'/edit');
-		}
-
-
+}
+	
 	/**
 	 * Display the specified resource.
 	 *
