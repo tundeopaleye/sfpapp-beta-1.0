@@ -183,7 +183,7 @@ array('required', 'class'=>'form-control',
 <p>
 	{!! preg_replace('/(^|\s)@([a-z0-9_]+)/i', '$1<a href="http://www.pictolit.com/users/$2">@$2</a>', $repost->body)  !!}
 </p>
-<p><a href="http://pictolit.com/reposts/{{$repost->id}}">View only repost story</a></p>
+<p><a href="/reposts/{{$repost->id}}">View only repost story</a></p>
 @endforeach
 @endif
 </div>

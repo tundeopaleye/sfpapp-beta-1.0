@@ -34,7 +34,7 @@ No relevant content to display
 @endif
 </div>
 
-<div style="height:30em; width:auto; overflow: hidden; border:3px solid #f57f20; background-color: #efefff;" align="center"><!--{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/",'', array('width'=>'auto','height'=>'100%')) !!}--></div>
+<div style="height:30em; width:auto; overflow: hidden; border:3px solid #f57f20; background-color: #efefff;" align="center">{!!HTML::image("https://sfpapp.s3.amazonaws.com/images/$brand->thumbnail",'', array('width'=>'auto','height'=>'100%')) !!}></div>
 
 <div class="form-group">
 <h1>Story: <b></b></h1>

@@ -9,6 +9,7 @@ use Auth;
 
 use App\Http\Requests\RepostFormRequest; //Create a new form request for Repost instead
 
+use App\Mailers\AppMailer;
 
 use App\Story;
 
@@ -50,7 +51,7 @@ class RepostsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store(RepostFormRequest $request)
+	public function store(RepostFormRequest $request, AppMailer $mailer)
 	{
 		
 		
@@ -92,6 +93,23 @@ class RepostsController extends Controller {
 		$user = User::find($repost->user_id);
 		
 		Auth::user()->reposts()->save($repost);
+		
+		// Mailing based on user mentions
+		
+		// A list of users in the db
+		
+		$usermail = User::all();
+		
+	//	$usermail = "@".User::all(); //Attach "@" to it from here?
+		
+		foreach ($usermail as $userm) {
+  if (preg_match("/\s+$userm\s+/i", $repostbody)) {
+    //Mail script to user user->email();
+    $mailer->sendEmailMentionNotificationTo($userm);
+  }
+}
+	
+
 			
 		\Session::flash('flash_message', 'Your Retold Story has been posted!');
 		

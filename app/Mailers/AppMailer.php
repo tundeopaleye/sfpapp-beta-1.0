@@ -45,4 +45,24 @@ class AppMailer {
 		});
 		
 	}
+	
+	public function sendEmailMentionNotificationTo(User $user)
+	{
+		$this->to = $user->email;
+		$this->view = 'stories.index'; // to change to show
+		$this->data = compact('user');
+		
+		$this->notify();
+		
+	}
+	
+	public function notify()
+	{
+		$this->mailer->send($this->view, $this->data, function($message) {
+			$message->from($this->from, 'Pictolit Admin')
+					->to($this->to)
+					->subject('Notification');
+		});
+		
+	}
 }
