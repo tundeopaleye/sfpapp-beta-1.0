@@ -169,9 +169,12 @@ class StoriesController extends Controller {
 	
 	//$user = User::create($request->all()); // temporary test for email sending
 		//$user = User::all();
+		
+		
+		/* Still need to get the mailer working with mentions
 		$user = User::find(111);
         $mailer->sendEmailMentionNotificationTo($user); // temporary test for email sending
-
+*/
 	
 	return redirect('stories/'.$story->id.'/edit');
 }
